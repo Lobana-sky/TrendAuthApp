@@ -43,6 +43,11 @@
     display: inline;
     margin-right: 30px;
   }
+
+  .btn{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
   
   /* Jumbotron */
   .jumbotron {
@@ -71,7 +76,7 @@
   }
   
   form {
-    margin-top:80px;
+    margin-top:20px;
   }
 
   
@@ -138,3 +143,4 @@
     list-style:none;
     padding-left:0px;  
   }
+
