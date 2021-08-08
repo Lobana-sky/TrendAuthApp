@@ -1,5 +1,11 @@
 # README
 
+* reference
+https://github.com/heartcombo/devise
+
+* confirmation mail
+https://mailcatcher.me/
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
