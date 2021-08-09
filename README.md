@@ -1,5 +1,14 @@
 # README
 
+* Dashboard page
+https://github.com/Lobana-sky/AuthRegistration/blob/main/dashboard.png
+
+* Home page
+https://github.com/Lobana-sky/AuthRegistration/blob/main/Home%20Page.png
+
+* Manage my account page
+https://github.com/Lobana-sky/AuthRegistration/blob/main/managemyaccount.png
+
 * reference
 https://github.com/heartcombo/devise
 
