@@ -1,6 +1,6 @@
 # README
 * heroku link: https://authdevise90.herokuapp.com/
-
+# Heroku
 * heroku login
 * heroku app:create authdevise90
 * git push heroku main
@@ -8,7 +8,7 @@
 * heroku info
 
 
-
+# Web Page
 * Dashboard page
  ![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/dashboard.png)
 
