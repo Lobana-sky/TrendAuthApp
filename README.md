@@ -1,7 +1,7 @@
 # README
 
 * Dashboard page
-<img href="https://github.com/Lobana-sky/AuthRegistration/blob/main/dashboard.png" />
+* ![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/dashboard.png)
 
 * Home page
 https://github.com/Lobana-sky/AuthRegistration/blob/main/Home%20Page.png
