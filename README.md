@@ -1,4 +1,13 @@
 # README
+* heroku link: https://authdevise90.herokuapp.com/
+
+* heroku login
+* heroku app:create authdevise90
+* git push heroku main
+* heroku run rake --trace db:migrate
+* heroku info
+
+
 
 * Dashboard page
  ![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/dashboard.png)
