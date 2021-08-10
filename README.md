@@ -13,7 +13,7 @@
 # Web Page
 
 * Dashboard page
- ![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/dashboard.png)
+ ![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/dashboardAdmin.png)
 
 * Home page
 ![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/Home%20Page.png)
