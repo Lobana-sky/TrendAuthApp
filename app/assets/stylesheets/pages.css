@@ -1,9 +1,6 @@
 body{
   background-color: #f3f3f3;
-}
-
-* {
-    color:rgb(7, 30, 105)
+  color:rgb(7, 30, 105)
 }
 
 .logged_email_color {
