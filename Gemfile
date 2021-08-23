@@ -22,7 +22,19 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'dotenv-rails'
+#make api request
+gem 'rest-client'
+#parse data that comming to us
+gem 'json'
+#pagination
+gem 'kaminari'
 
+gem 'sidekiq'
+# source ENV['SIDEKIQ_SOURCE_URL'] do
+gem 'sidekiq-ent'
+# end
+gem "sidekiq-cron"
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

@@ -1,11 +1,20 @@
+body{
+  background-color: #f3f3f3;
+}
+
 * {
     color:rgb(7, 30, 105)
+}
+
+.logged_email_color {
+  color: #d63384;
 }
 
  main {
      margin: 50px;
      font-size: larger;
  } 
+
  .container_image {
   position: relative;
   text-align: center;

@@ -14,16 +14,21 @@
 # )
 
 
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 # #insert into category table
 # #run once
+# category_response = RestClient.get("#{ENV['BASE_URL']}/available/categories")
+# categories = JSON.parse(category_response)['categories']
+# categories.each do |category|
+#   Category.create(category_name: category)
+# end
+# Category.create(category_name: "None")
 
-category_response = RestClient.get("#{ENV['BASE_URL']}/available/categories")
-categories = JSON.parse(category_response)['categories']
-categories.each do |category|
-    Category.create(category_name: category)
-    end
-    
-Category.create(category_name: "None")
+
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 
 # #insert into newscurrents table for the first time
 # news_currents_response = RestClient.get("#{ENV['BASE_URL']}/latest-news?language=en&cache-control=no-cache&apiKey=#{ENV['API_KEY']}")
@@ -36,7 +41,7 @@ Category.create(category_name: "None")
 #     else 
 #       category_id = Category.create(category_name: category_name).id
 #     end
-#     NewsCurrent.create(id_news: news['id'], title: news['title'], description: news['description'],
+#     CurrentNews.create(id_news: news['id'], title: news['title'], description: news['description'],
 #       url: news['url'], author: news['author'],
 #       image: news['image'], language: news['language'], published: news['published'], category_id: category_id)
 # end

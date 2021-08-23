@@ -77,6 +77,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = { :address => '127.0.0.1', :port => 1025 }
   config.action_mailer.raise_delivery_errors = false
 
+  config.active_job.queue_adapter = :sidekiq
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
 end
