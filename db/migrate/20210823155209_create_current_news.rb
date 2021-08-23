@@ -1,5 +1,5 @@
 class CreateCurrentNews < ActiveRecord::Migration[6.1]
-  def create
+  def change
     create_table :current_news do |t|
       t.string :title
       t.string :description

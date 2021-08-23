@@ -210,14 +210,13 @@ GEM
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
-    sidekiq (6.2.1)
+    sidekiq (6.2.2)
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
       redis (>= 4.2.0)
     sidekiq-cron (1.2.0)
       fugit (~> 1.1)
       sidekiq (>= 4.2.1)
-    sidekiq-ent (0.0.1)
     spring (2.1.1)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
@@ -281,7 +280,6 @@ DEPENDENCIES
   selenium-webdriver
   sidekiq
   sidekiq-cron
-  sidekiq-ent
   spring
   turbolinks (~> 5)
   tzinfo-data

@@ -28,12 +28,10 @@ gem 'rest-client'
 #parse data that comming to us
 gem 'json'
 #pagination
-gem 'kaminari'
+gem 'kaminari' 
 
 gem 'sidekiq'
-# source ENV['SIDEKIQ_SOURCE_URL'] do
-gem 'sidekiq-ent'
-# end
+
 gem "sidekiq-cron"
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

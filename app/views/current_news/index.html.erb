@@ -1,4 +1,5 @@
-<table class="table">
+<%= paginate @current_news %>
+<table class="table mt-3">
   <tr>
     <th>Title</th>
     <th>Author</th>
@@ -11,7 +12,7 @@
 
 <% for news in @current_news %>
   <tr>
-    <td><%= news.title %></td>
+    <td><span><%= news.title %></span></td>
     <td><%= news.author %></td>
     <td><%= news.language %></td>
     <td><%= link_to 'details', news.url %></td>
@@ -21,4 +22,3 @@
   </tr>
 <% end %>
 </table>
-<%= paginate @current_news%>
