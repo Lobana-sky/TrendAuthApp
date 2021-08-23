@@ -27,9 +27,11 @@ body{
   color:blueviolet;
   font-size: larger;
 }
- .thanks{
-     color:aqua;
- }
+
+.news_current_column_width{
+  max-width:150px
+}
+
 @media (min-width: 1200px) {
     .container {
       width: 970px;
