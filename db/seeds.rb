@@ -31,17 +31,17 @@
 
 
 # #insert into newscurrents table for the first time
-current_news_response = RestClient.get("#{ENV['BASE_URL']}/latest-news?language=en&cache-control=no-cache&apiKey=#{ENV['API_KEY']}")
-latest_news = JSON.parse(current_news_response)['news']
-latest_news.each do |news|
-  category_name = news['category'].empty? || news['category'] == nil ? "None" : news['category'][0]
-  category = Category.find_by(category_name: category_name)
-  if category != nil
-    category_id = category.id 
-  else 
-    category_id = Category.create(category_name: category_name).id
-  end
-  CurrentNews.create(id_news: news['id'], title: news['title'], description: news['description'],
-    url: news['url'], author: news['author'],
-    image: news['image'], language: news['language'], published: news['published'], category_id: category_id)
-end
+# current_news_response = RestClient.get("#{ENV['BASE_URL']}/latest-news?language=en&cache-control=no-cache&apiKey=#{ENV['API_KEY']}")
+# latest_news = JSON.parse(current_news_response)['news']
+# latest_news.each do |news|
+#   category_name = news['category'].empty? || news['category'] == nil ? "None" : news['category'][0]
+#   category = Category.find_by(category_name: category_name)
+#   if category != nil
+#     category_id = category.id 
+#   else 
+#     category_id = Category.create(category_name: category_name).id
+#   end
+#   CurrentNews.create(id_news: news['id'], title: news['title'], description: news['description'],
+#     url: news['url'], author: news['author'],
+#     image: news['image'], language: news['language'], published: news['published'], category_id: category_id)
+# end

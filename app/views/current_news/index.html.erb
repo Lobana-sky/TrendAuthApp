@@ -12,10 +12,10 @@
 
 <% for news in @current_news %>
   <tr>
-    <td><span><%= news.title %></span></td>
+    <td><%= news.title %></td>
     <td><%= news.author %></td>
     <td><%= news.language %></td>
-    <td><%= link_to 'details', news.url %></td>
+    <td><%= link_to 'more details', news.url %></td>
     <td><%= news.image != "None" ? image_tag(news.image, size: "50x50") : "None" %></td>
     <td><%= Category.find(news.category_id).category_name %></td>
     <td><%= news.published %></td>
