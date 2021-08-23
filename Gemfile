@@ -31,8 +31,9 @@ gem 'json'
 gem 'kaminari' 
 
 gem 'sidekiq'
-
-gem "sidekiq-cron"
+gem 'sidekiq-cron'
+# ERD Diagram
+gem 'rails-erd'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
