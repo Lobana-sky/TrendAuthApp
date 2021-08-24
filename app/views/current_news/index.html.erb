@@ -4,9 +4,8 @@
     <th>Title</th>
     <th>Author</th>
     <th>Language</th>
-    <th>Details</th>
-    <th>Image</th>
     <th>Category</th>
+    <th>Details</th>
     <th>Published</th>
   </tr>
 
@@ -15,10 +14,9 @@
     <td class="news_current_column_width"><span><%= news.title %></span></td>
     <td class="news_current_column_width"><%= news.author %></td>
     <td class="news_current_column_width"><%= news.language %></td>
+    <td class="news_current_column_width"><%= Category.find(news.category_id).category_name %></td>
     <td class="news_current_column_width"><%= link_to 'more details', news.url %></td>
-    <td><%= news.image != "None" ? image_tag(news.image, size: "50x50") : "None" %></td>
-    <td><%= Category.find(news.category_id).category_name %></td>
-    <td><%= news.published %></td>
+    <td class="news_current_column_width"><%= news.published %></td>
   </tr>
 <% end %>
 </table>

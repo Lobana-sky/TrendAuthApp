@@ -12,22 +12,6 @@ body{
      font-size: larger;
  } 
 
- .container_image {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 150px;
-  color:blueviolet;
-  font-size: larger;
-}
-
 .news_current_column_width{
   max-width:150px
 }
