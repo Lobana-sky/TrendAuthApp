@@ -6,15 +6,19 @@ class CurrentNewsApiService
     
   def call
     current_news_response = RestClient.get("#{base_url}/#{@endpoint}?language=en&apiKey=#{api_key}")
-    return JSON.parse(current_news_response)['news']
+    # return JSON.parse(current_news_response)['news']
+  rescue RestClient::ExceptionWithResponse => e
+    e.response
+  else
+    JSON.parse(current_news_response)['news']
   end
-
+  
   private
-
+  
     def base_url
       ENV['BASE_URL']
     end
-
+    
     def api_key
       ENV['API_KEY']
     end

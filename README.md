@@ -88,3 +88,7 @@ https://www.youtube.com/watch?v=_6YyLTL2BW4
 * bundle i
 * sudo apt install graphviz  https://graphviz.org/download/
 * bundle exec erd
+
+# RestClient Handling Errors
+ * https://github.com/rest-client/rest-client#response-callbacks-error-handling
+ * https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html

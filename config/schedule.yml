@@ -1,5 +1,5 @@
 fetch_data_job:
-  cron: "0 */4 * * *"
+  cron: "* * * * *"
   class: "FetchDataJob"
   queue: default
 
