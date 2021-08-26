@@ -92,3 +92,6 @@ https://www.youtube.com/watch?v=_6YyLTL2BW4
 # RestClient Handling Errors
  * https://github.com/rest-client/rest-client#response-callbacks-error-handling
  * https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
+
+# references:
+* https://blog.appsignal.com/2020/06/17/using-service-objects-in-ruby-on-rails.html
