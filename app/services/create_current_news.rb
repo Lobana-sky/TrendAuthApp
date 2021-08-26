@@ -6,7 +6,6 @@ class CreateCurrentNews
 
   def call
     current_news = CurrentNews.create(@current_news_params)
-    current_news.save
   end
 
 end
