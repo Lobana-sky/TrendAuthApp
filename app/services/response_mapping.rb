@@ -10,7 +10,8 @@ class ResponseMapping
     if category != nil
       return category.id 
     else 
-      return CreateCategory.new(category_params: {category_name: category_name}).call.id
+      # return CreateCategory.new(category_params: {category_name: category_name}).call.id
+    return Category.create(@category_params)
     end
   end
   
