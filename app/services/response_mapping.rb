@@ -4,21 +4,11 @@ class ResponseMapping
     @latest_news = latest_news
   end
 
-  def get_category_id(news_category)
-    category_name = news_category.empty? ? "None" : news_category[0]
-    category = Category.find_by(category_name: category_name)
-    if category != nil
-      return category.id 
-    else 
-      # return CreateCategory.new(category_params: {category_name: category_name}).call.id
-    return Category.create(@category_params)
-    end
-  end
-  
   def call()
     mapped_latest_news = @latest_news.map do |news|
       if CurrentNews.find_by(id_news: news['id']) == nil 
-        category_id = get_category_id(news['category'])
+        category_name = news['category'].empty? ? "None" : news['category'][0]
+        category_id = Category.find_or_create_by!(category_name: category_name).id
         news_attributes = {
           id_news: news['id'],
           title: news['title'],

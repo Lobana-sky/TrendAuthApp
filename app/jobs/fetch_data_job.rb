@@ -13,5 +13,5 @@ class FetchDataJob < ApplicationJob
       mapped_latest_news.each do |new_news|
       current_news = CurrentNews.create(new_news)
       end
-  end
+    end
 end
