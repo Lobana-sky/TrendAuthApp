@@ -11,8 +11,7 @@ class FetchDataJob < ApplicationJob
 
     def persist_to_data_base(mapped_latest_news)
       mapped_latest_news.each do |new_news|
-      current_news = CurrentNews.new(new_news)
-      current_news.save!
+        PersistSingleCurrentNewsToDataBaseJob.perform_later(new_news)
       end
     end
 end
