@@ -3,7 +3,7 @@ class FetchDataJob < ApplicationJob
 
   def perform(*args)
     results = CurrentNewsApiService.new({endpoint: 'latest-news'}).call()
-    mapped_latest_news = ResponseProccessingAndMapping.new(results).call()
+    mapped_latest_news = CurrentNewsResponseProccessingAndMapping.new(results).call()
     persist_to_data_base(mapped_latest_news)
   end
 

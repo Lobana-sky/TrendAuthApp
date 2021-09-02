@@ -1,4 +1,4 @@
-class ResponseProccessingAndMapping
+class CurrentNewsResponseProccessingAndMapping
 
   def initialize(latest_news)
     @latest_news = latest_news
@@ -16,13 +16,13 @@ class ResponseProccessingAndMapping
   private
     
     def get_category_id(single_news)
-      category_name = get_proper_category_name_fit_receiving_api_current_news(single_news['category'])
+      category_name = fill_in_category_name(single_news['category'])
       category = check_category_to_add_and_return(category_name.upcase!)
       return category.id
     end
 
-    def get_proper_category_name_fit_receiving_api_current_news(single_current_news_category_array)
-      if single_current_news_category_array.empty? #current news has no category name so its category is "None"
+    def fill_in_category_name(single_current_news_category_array)
+      if single_current_news_category_array.empty? #current news has no category name so its category is "NONE"
         category_name = "NONE"
       else
         category_name = single_current_news_category_array[0]
