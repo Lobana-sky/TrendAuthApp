@@ -1,5 +1,5 @@
 class CurrentNews < ApplicationRecord
-  belongs_to :category, optional: true
+  belongs_to :category
   validates :id_news,
   presence: true,
   uniqueness: true
