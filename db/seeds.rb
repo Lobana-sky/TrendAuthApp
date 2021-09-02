@@ -24,7 +24,7 @@
 # categories.each do |category|
 #   Category.create(category_name: category)
 # end
-# Category.create(category_name: "None")
+# Category.create(category_name: "NONE")
 
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -1,6 +1,7 @@
 <%= paginate @current_news %>
 <table class="table mt-3">
   <tr>
+    <th>ID</th>
     <th>Title</th>
     <th>Author</th>
     <th>Language</th>
@@ -11,6 +12,7 @@
 
 <% for news in @current_news %>
   <tr>
+    <td class="news_current_column_width"><span><%= news.id_news %></span></td>
     <td class="news_current_column_width"><span><%= news.title %></span></td>
     <td class="news_current_column_width"><%= news.author %></td>
     <td class="news_current_column_width"><%= news.language %></td>

@@ -57,7 +57,11 @@ Things you may want to cover:
 
 * Currents API provide news in 15 different languages across over 50 countries in forms of news, article, forum discussion topics.
 
-* https://api.currentsapi.services/v1/latest-news?apiKey=hxFz_ZAZV-JDRZYOq1SH7wq_s_opv3dNcMtVm9MvS2At6Kpf
+* https://api.currentsapi.services/v1/latest-news?
+apiKey=ppvVKctrJQz1oZb-RzjjrHr4fm34daUJqV-X3ZITDNbumJgL
+
+
+apiKey=hxFz_ZAZV-JDRZYOq1SH7wq_s_opv3dNcMtVm9MvS2At6Kpf
 
 * We also serve a list of supported language and country code which you can use to filter your results
 -- https://api.currentsapi.services/v1/available/categories
