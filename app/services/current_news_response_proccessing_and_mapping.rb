@@ -6,7 +6,8 @@ class CurrentNewsResponseProccessingAndMapping
 
   def call()
     mapped_latest_news = @latest_news.map do |single_news|
-      if !CurrentNews.exists?(id_news: single_news['id'])
+      # if !CurrentNews.exists?(id_news: single_news['id'])
+      if CurrentNews.find_by(id_news: single_news['id']).nil?
         category_id = get_category_id(single_news)
         news_attributes = get_mapped_single_current_news(single_news, category_id)
       end
@@ -31,7 +32,7 @@ class CurrentNewsResponseProccessingAndMapping
     end
 
     def check_category_to_add_and_return(category_name)
-      Category.find_or_create_by!(category_name: category_name)
+      PersistCategoryToDataBaseJob.perform_now(category_name)
     end
 
     def get_mapped_single_current_news(single_news, category_id)

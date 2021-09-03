@@ -17,7 +17,6 @@ reference:
 
 
 
-
 # API
 we have three situations for the receiving current_news:
 
@@ -119,4 +118,4 @@ and every category has many current_news
 like how many news talk about "sports" subject in the last WEEK... 
 
 
-*** In our system we add a job for each save to table operation and a job for every fetch from API, (TYI - Every call to API return 30 objects -), so each time we have 31 jobs are working in background.
+*** In our system we add a job for each save to table operation and a job for every fetch from API, (TYI - Every call to API return 30 objects -), so each time we have 31 jobs are working in background, except the job for every category.
