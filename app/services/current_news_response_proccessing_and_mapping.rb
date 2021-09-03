@@ -8,7 +8,7 @@ class CurrentNewsResponseProccessingAndMapping
     mapped_latest_news = @latest_news.map do |single_news|
       if !CurrentNews.exists?(id_news: single_news['id'])
         category_id = get_category_id(single_news)
-        news_attributes = mapping_single_current_news(single_news, category_id)
+        news_attributes = get_mapped_single_current_news(single_news, category_id)
       end
     end
   end 
@@ -34,7 +34,7 @@ class CurrentNewsResponseProccessingAndMapping
       Category.find_or_create_by!(category_name: category_name)
     end
 
-    def mapping_single_current_news(single_news, category_id)
+    def get_mapped_single_current_news(single_news, category_id)
       single_news_attributes = {
         id_news: single_news['id'],
         title: single_news['title'],
