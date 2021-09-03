@@ -99,3 +99,7 @@ https://www.youtube.com/watch?v=_6YyLTL2BW4
 
 # references:
 * https://blog.appsignal.com/2020/06/17/using-service-objects-in-ruby-on-rails.html
+
+# To Reset Sidekiq Dashboard
+* Sidekiq::Stats.new.reset in *rails console*
+* https://stackoverflow.com/questions/15834911/how-do-i-reset-my-sidekiq-counters

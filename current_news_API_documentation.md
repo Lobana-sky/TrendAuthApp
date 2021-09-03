@@ -2,6 +2,8 @@
 we want to build a TREND system like to see how people talk about specific subject in the last week for example...
 like how many news talk about "sports" subject in the last WEEK...
 
+
+
 # How many times to fetch
 Our system will fetch data from Curent News API twice a day - every 12 hours - at 04:00 am and 04:00 pm
 used *periodic tasks with sidekiq cron* 
@@ -114,5 +116,7 @@ and every category has many current_news
         ["regional","technology","lifestyle","business","general","programming","science","entertainment","world","sports","finance","academia","politics","health","opinion","food","game","fashion","academic","crap","travel","culture","economy","environment","art","music","notsure","CS","education","redundant","television","commodity","movie","entrepreneur","review","auto","energy","celebrity","medical","gadgets","design","EE","security","mobile","estate","funny"]}
 
 *** we will need Category table for chart task that we want to build a TREND system like to see how people talk about specific subject in the last week for example
-
 like how many news talk about "sports" subject in the last WEEK... 
+
+
+*** In our system we add a job for each save to table operation and a job for every fetch from API, (TYI - Every call to API return 30 objects -), so each time we have 31 jobs are working in background.
