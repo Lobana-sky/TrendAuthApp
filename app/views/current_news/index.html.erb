@@ -1,5 +1,5 @@
 <%= form_with url: display_chart_path, method: :get do |form| %>
-<%= select(:search_word, "id", @categories.collect {|category| [ category.category_name, category.id ] }) %>
+<%= select(:search_word, "id", @categories.collect {|category| [ category.category_name, category.id ]}) %>
 <%= form.submit "Search" %>
 <% end %>
 
