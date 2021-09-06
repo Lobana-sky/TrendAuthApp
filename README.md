@@ -103,3 +103,14 @@ https://www.youtube.com/watch?v=_6YyLTL2BW4
 # To Reset Sidekiq Dashboard
 * Sidekiq::Stats.new.reset in *rails console*
 * https://stackoverflow.com/questions/15834911/how-do-i-reset-my-sidekiq-counters
+
+# Chart
+-- in Gemfile
+* gem 'chartkick'
+* gem 'groupdate'
+
+-- For Rails 6 / Webpacker, run:
+* yarn add chartkick chart.js
+
+-- And in app/javascript/packs/application.js, add:
+* import "chartkick/chart.js"

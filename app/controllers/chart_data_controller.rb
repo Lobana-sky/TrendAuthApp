@@ -3,6 +3,8 @@ class ChartDataController < ApplicationController
     @search_results_seven_days = get_chart_data()
     # @category_name_search = Category.find(params[:search_word]["id"].to_i).category_name
     @category_id_search = Category.find(params[:search_word]["id"].to_i)
+    @all_category_count = CurrentNews.where(category_id: @category_id_search).group_by_day(:published).count
+    @all_current_news_by_published_date = CurrentNews.group_by_day(:published).count
   end
 
   def get_chart_data

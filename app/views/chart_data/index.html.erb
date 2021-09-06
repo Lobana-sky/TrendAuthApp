@@ -1,9 +1,11 @@
 <h1>View all category</h1>
-<%= line_chart CurrentNews.where(category_id: @category_id_search).group_by_day(:published).count%>
+<%= line_chart @all_category_count%>
+
+<h1>View by published</h1>
+<%= line_chart @all_current_news_by_published_date%>
+
 <h1>View 7 deys prev search category</h1>
 <%= line_chart @search_results_seven_days, colors: ["#b00", "#666"] %>
-<h1>View by published</h1>
-<%= line_chart CurrentNews.group_by_day(:published).count%>
 <table class="table">
 <tr>
 <th>Days</th>
