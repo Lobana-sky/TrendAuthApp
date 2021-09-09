@@ -3,6 +3,14 @@
 <%= form.submit "Search" %>
 <% end %>
 
+<%= form_with url: display_chart_path, method: :get do |form| %>
+  <%= form.label :query, "Search for:" %>
+  <%= form.text_field :query %>
+  <%= form.label :days_no, "number of prev days:" %>
+  <%= form.text_field :days_no %>
+  <%= form.submit "Search" %>
+<% end %>
+
 
 <%= paginate @current_news %>
 <table class="table mt-3">

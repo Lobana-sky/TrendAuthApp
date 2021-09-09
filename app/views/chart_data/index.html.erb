@@ -1,20 +1,18 @@
-<h1>View by published</h1>
-<%= line_chart @all_current_news_by_published_date%>
 
-<h1>View for "<%= @name_for_searching_category%>" category through entire time</h1>
-<%= line_chart @get_data_for_category_entire_time%>
+  <h1>View for ALL categories through published</h1>
+  <%= line_chart @all_current_news_by_published_date%>
 
-<h1>View 7 deys prev for "<%= @name_for_searching_category%>"</h1>
-<%= line_chart @get_data_for_category_prev_week, colors: ["#b00", "#666"] %>
-<table class="table">
-<tr>
-<th>Days</th>
-</tr>
-<% for count in @get_data_for_category_prev_week %>
-<tr>
-<td><%= count %></td>
-</tr>
-<% end %> 
-</table>
+<% if @search_word.present? %>
+  <h1>Trend Chart for <%= @search_word %></h1>
+  <%= line_chart @trend_chart%>
+<% end %>
 
+<% if @name_for_searching_category.present? %>
+
+  <h1>View for "<%= @name_for_searching_category%>" category through entire time</h1>
+  <%= line_chart @data_for_category_entire_time%>
+
+  <h1>View 7 deys prev for "<%= @name_for_searching_category%>"</h1>
+  <%= line_chart @data_for_category_prev_week, colors: ["#b00", "#666"] %>
+<% end %>
 <%= link_to 'back', current_news_path, class: "btn btn-info"%>
