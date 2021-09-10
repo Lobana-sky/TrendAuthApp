@@ -24,11 +24,12 @@ class CurrentNews < ApplicationRecord
       start_time = time.beginning_of_day().advance(hours: 3)
       end_time = time.end_of_day().advance(hours: 3)
       search_results = CurrentNews.where('title like ?', "%#{search_word}%")
+      .or(CurrentNews.where('description like ?', "%#{search_word}%"))
       .where(published: start_time...end_time).count
 
       # add to the beginning of array
       #We push the name of the day 'time.strftime('%A')' and category count in that day
-      chart_date.push([time.strftime("%A"), search_results])
+      chart_date.push([time.strftime("%F"), search_results])
       time = time.next_day(day = 1)
     end
     return chart_date

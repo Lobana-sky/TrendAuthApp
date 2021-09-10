@@ -1,5 +1,7 @@
 class ChartDataController < ApplicationController
   def index
+    @current_news = CurrentNews.find_each
+    @categories = Category.find_each
     # Full chart all current news group by published date
     @current_news_by_published = 
       CurrentNews.get_current_news_group_by_published()

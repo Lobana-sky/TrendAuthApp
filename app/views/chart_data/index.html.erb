@@ -1,18 +1,29 @@
 
-  <h1>View for ALL categories through published</h1>
-  <%= line_chart @all_current_news_by_published_date%>
+<h1>Current News categories group</h1>
+<%= line_chart @categories.map {|category|
+ {name: category.category_name, data: category.current_news.group_by_day(:published).count,
+ title: "Awesome chart", download: true, legend: false, legend: "bottom" }
+}%>
+
+<h1>Current News categories group</h1>
+<%= line_chart CurrentNews.group(:category_id).count%>
+
+<h1>Current News published group</h1>
+<%= pie_chart @current_news_by_published,
+title: "Awesome chart", download: true%>
 
 <% if @search_word.present? %>
-  <h1>Trend Chart for <%= @search_word %></h1>
-  <%= line_chart @trend_chart%>
+  <h1>Trend "<%= @search_word %>"</h1>
+  <%= column_chart @trend_data,
+   colors: ["#b00", "#666", "#aa1", "#ff3"]%>
+
 <% end %>
 
-<% if @name_for_searching_category.present? %>
+<% if @category_name.present? %>
 
-  <h1>View for "<%= @name_for_searching_category%>" category through entire time</h1>
-  <%= line_chart @data_for_category_entire_time%>
+  <h1>"<%= @category_name%>" category through entire time</h1>
+  <%= line_chart @current_news_by_category_in_entire_time,
+  title: "Awesome chart"%>
 
-  <h1>View 7 deys prev for "<%= @name_for_searching_category%>"</h1>
-  <%= line_chart @data_for_category_prev_week, colors: ["#b00", "#666"] %>
 <% end %>
 <%= link_to 'back', current_news_path, class: "btn btn-info"%>
