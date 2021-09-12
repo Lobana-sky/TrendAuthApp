@@ -1,24 +1,20 @@
-<%= form_with url: display_chart_path, method: :get do |form| %>
-<%= select(:search_word, "id", @categories.collect {|category| [ category.category_name, category.id ]}) %>
+<%= form_with url: current_news_path, method: :get do |form| %>
+<%= form.label :category, "Select Category to seach:" %>
+<%= select(:category, "id", @categories.collect {|category| [ category.category_name, category.id ]}) %></br></br>
+<%= form.label :query, "Search for:" %>
+<%= form.text_field :query %>
+<%= form.label :days_no, "number of prev days:" %>
+<%= form.text_field :days_no %></br>
 <%= form.submit "Search" %>
 <% end %>
 
-<%= form_with url: display_chart_path, method: :get do |form| %>
-  <%= form.label :query, "Search for:" %>
-  <%= form.text_field :query %>
-  <%= form.label :days_no, "number of prev days:" %>
-  <%= form.text_field :days_no %>
-  <%= form.submit "Search" %>
-<% end %>
-
+<%= link_to 'Go to chart', current_news_path, class: "btn btn-info"%>
 
 <%= paginate @current_news %>
 <table class="table mt-3">
   <tr>
-    <th>ID</th>
     <th>Title</th>
     <th>Author</th>
-    <th>Language</th>
     <th>Category</th>
     <th>Details</th>
     <th>Published</th>
@@ -26,10 +22,8 @@
 
 <% for news in @current_news %>
   <tr>
-    <td class="news_current_column_width"><span><%= news.id_news %></span></td>
     <td class="news_current_column_width"><span><%= news.title %></span></td>
     <td class="news_current_column_width"><%= news.author %></td>
-    <td class="news_current_column_width"><%= news.language %></td>
     <td class="news_current_column_width"><%= @categories_hash[news.category_id] %></td> 
     <td class="news_current_column_width"><%= link_to 'more details', news.url %></td>
     <td class="news_current_column_width"><%= news.published %></td>

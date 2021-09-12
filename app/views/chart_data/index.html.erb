@@ -1,29 +1,33 @@
+</br><%= link_to 'Back to Latest News', current_news_path, class: "btn btn-info"%>
+<%= form_with url: display_chart_path, method: :get do |form| %>
+<%= form.label :category, "Select Category to seach:" %>
+<%= select(:category, "id", @categories.collect {|category| [ category.category_name, category.id ]}) %></br></br>
+<%= form.label :trend_text, "Search for:" %>
+<%= form.text_field :trend_text %>
+<%= form.label :days_no, "number of prev days:" %>
+<%= form.text_field :days_no %></br>
+<%= form.submit "Search" %>
+<% end %>
 
-<h1>Current News categories group</h1>
-<%= line_chart @categories.map {|category|
- {name: category.category_name, data: category.current_news.group_by_day(:published).count,
- title: "Awesome chart", download: true, legend: false, legend: "bottom" }
-}%>
+<% if @show_category_chart %>
+  <%= line_chart @current_news_by_category,
+  title: "#{@category_name} category"%>
+<% end %>
 
-<h1>Current News categories group</h1>
-<%= line_chart CurrentNews.group(:category_id).count%>
-
-<h1>Current News published group</h1>
-<%= pie_chart @current_news_by_published,
-title: "Awesome chart", download: true%>
-
-<% if @search_word.present? %>
+<% if @show_trend_chart %>
   <h1>Trend "<%= @search_word %>"</h1>
   <%= column_chart @trend_data,
    colors: ["#b00", "#666", "#aa1", "#ff3"]%>
-
 <% end %>
 
-<% if @category_name.present? %>
+<%= line_chart @categories.map {|category|
+ {name: category.category_name,
+  data: category.current_news.group_by_day(:published).count,
+  title: "Current News categories group"}
+}%>
 
-  <h1>"<%= @category_name%>" category through entire time</h1>
-  <%= line_chart @current_news_by_category_in_entire_time,
-  title: "Awesome chart"%>
+<%= pie_chart @current_news_by_published,
+title: "Current News published group", download: true%>
 
-<% end %>
-<%= link_to 'back', current_news_path, class: "btn btn-info"%>
+
+
