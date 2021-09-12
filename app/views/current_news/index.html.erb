@@ -1,3 +1,4 @@
+
 <%= form_with url: current_news_path, method: :get do |form| %>
 <%= form.label :category, "Select Category to seach:" %>
 <%= select(:category, "id", @categories.collect {|category| [ category.category_name, category.id ]}) %></br></br>
@@ -5,12 +6,16 @@
 <%= form.text_field :query %>
 <%= form.label :days_no, "number of prev days:" %>
 <%= form.text_field :days_no %></br>
+
+<%= date_select('published', 'date', :order => [:month, :day, :year])%>
 <%= form.submit "Search" %>
 <% end %>
 
-<%= link_to 'Go to chart', current_news_path, class: "btn btn-info"%>
+<%= link_to 'Go to chart', display_chart_path, class: "btn btn-info"%>
 
-<%= paginate @current_news %>
+
+ <%= paginate @current_news %> 
+
 <table class="table mt-3">
   <tr>
     <th>Title</th>

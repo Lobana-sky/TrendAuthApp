@@ -1,17 +1,10 @@
 </br><%= link_to 'Back to Latest News', current_news_path, class: "btn btn-info"%>
 <%= form_with url: display_chart_path, method: :get do |form| %>
-<%= form.label :category, "Select Category to seach:" %>
-<%= select(:category, "id", @categories.collect {|category| [ category.category_name, category.id ]}) %></br></br>
 <%= form.label :trend_text, "Search for:" %>
-<%= form.text_field :trend_text %>
+<%= form.text_field :trend_text, required: true%>
 <%= form.label :days_no, "number of prev days:" %>
-<%= form.text_field :days_no %></br>
+<%= form.text_field :days_no, required: true %></br>
 <%= form.submit "Search" %>
-<% end %>
-
-<% if @show_category_chart %>
-  <%= line_chart @current_news_by_category,
-  title: "#{@category_name} category"%>
 <% end %>
 
 <% if @show_trend_chart %>

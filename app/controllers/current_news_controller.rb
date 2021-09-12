@@ -4,15 +4,26 @@ class CurrentNewsController < ApplicationController
     @categories = Category.find_each
     @categories_hash = Category.get_categories_as_hash(@categories)
 
+    # Category : search by category
+    if params[:category].present?
+      @current_news = 
+      CurrentNews.get_current_news_by_category(get_category_id()).page params[:page]
+    end
+
+    if params[:published].present?
+      published_date = 
+        Date.civil(params[:published][:"date(1i)"].to_i,
+        params[:published][:"date(2i)"].to_i,
+        params[:published][:"date(3i)"].to_i) 
+      @current_news = 
+        CurrentNews.get_current_news_in_date(published_date).page params[:page]
+    end
   end
 
-  # private
+  private
 
-  #   def get_category_id()
-  #     params[:category]["id"].to_i
-  #   end
+    def get_category_id()
+      params[:category]["id"].to_i
+    end
 
-  #   def get_category_name(id)
-  #     Category.find(id).category_name
-  #   end
 end

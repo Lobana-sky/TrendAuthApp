@@ -1,5 +1,5 @@
 class ChartData
-# Charts Data
+
   def self.get_current_news_group_by_published
     CurrentNews.group_by_day(:published).count
   end
@@ -21,10 +21,6 @@ class ChartData
     time = time.next_day(day = 1)
     end
     return chart_date
-  end
-
-  def self.get_current_news_by_category(id)
-    CurrentNews.where(category_id: id).group_by_day(:published).count
   end
   
 end
