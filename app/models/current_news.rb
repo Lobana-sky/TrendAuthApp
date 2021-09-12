@@ -19,4 +19,11 @@ class CurrentNews < ApplicationRecord
     end_time = published_date.end_of_day().advance(hours: 3)
     search_results = CurrentNews.where(published: start_time...end_time)
   end
+
+  def self.get_current_news_by_category_in_date(id, published_date)
+    start_time = published_date.beginning_of_day().advance(hours: 3)
+    end_time = published_date.end_of_day().advance(hours: 3)
+    search_results = CurrentNews.where(published: start_time...end_time)
+    .where(category_id: id)
+  end
 end

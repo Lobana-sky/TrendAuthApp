@@ -4,7 +4,7 @@
 <%= form.text_field :trend_text, required: true%>
 <%= form.label :days_no, "number of prev days:" %>
 <%= form.text_field :days_no, required: true %></br>
-<%= form.submit "Search" %>
+<%= form.submit "Search", class: "btn btn-success" %>
 <% end %>
 
 <% if @show_trend_chart %>
