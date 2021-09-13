@@ -9,20 +9,31 @@
 <%= form.submit "Search", class: "btn btn-success" %>
 <% end %>
 
+<hr/>
+<div class="chart_section">
 <% if @show_trend_chart %>
-  <h1>Trend "<%= @search_word %>"</h1>
+  <h2>Trend "<%= @search_word %>"</h2>
   <%= column_chart @trend_data,
    colors: ["#b00", "#666", "#aa1", "#ff3"]%>
 <% end %>
+</div>
 
+<hr/>
+<div class="chart_section">
+<h2 class="mb-4">Current News group categories</h2>
 <%= line_chart @categories.map {|category|
  {name: category.category_name,
-  data: category.current_news.group_by_day(:published).count,
-  title: "Current News categories group"}
+  data: category.current_news.group_by_day(:published).count}
 }%>
+</div>
 
+<hr/>
+<div class="chart_section">
 <%= pie_chart @current_news_by_published,
-title: "Current News published group", download: true%>
+title: "Current News group published", download: true%>
+</div>
+
+<hr/>
 
 
 

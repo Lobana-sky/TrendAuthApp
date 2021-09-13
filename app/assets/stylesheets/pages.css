@@ -15,6 +15,17 @@ body{
   max-width:150px
 }
 
+.chart_section{
+  margin: 4em;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 3px solid rgba(212, 24, 65, 0.1);
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 970px;
