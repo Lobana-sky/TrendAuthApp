@@ -1,16 +1,16 @@
+<%= link_to 'Go to chart', display_chart_path, class: "btn btn-info m-4 d-block"%>
 
-<%= form_with url: current_news_path, method: :get do |form| %>
+<%= form_with url: current_news_path, class: "m-4 d-block border border-info p-3", method: :get do |form| %>
 <%= form.label :published_date, "Current news in:" %>
-<%= date_select('published', 'date', :published_date => [:month, :day, :year])%></br></br>
+<%= date_select('published', 'date', :published_date => [:month, :day, :year])%>
+<%= form.check_box :select_published_date%></br>
 <%= form.label :category, "Current news That its Category:" %>
-<%= select(:category, "id", @categories.collect {|category| [ category.category_name, category.id ]}) %></br></br>
-<%= form.submit "Search", class: "btn btn-success" %>
+<%= select(:category, "id", @categories.collect {|category| [ category.category_name, category.id ]}) %>
+<%= form.check_box :select_category %>
+<%= form.submit "Search", class: "btn btn-success d-block" %>
+
 <% end %>
-
-<%= link_to 'Go to chart', display_chart_path, class: "btn btn-info"%>
-
-
- <%= paginate @current_news %> 
+<%= paginate @current_news %> 
 
 <table class="table mt-3">
   <tr>
@@ -20,13 +20,12 @@
     <th>Details</th>
     <th>Published</th>
   </tr>
-
 <% for news in @current_news %>
   <tr>
     <td class="news_current_column_width"><span><%= news.title %></span></td>
     <td class="news_current_column_width"><%= news.author %></td>
     <td class="news_current_column_width"><%= @categories_hash[news.category_id] %></td> 
     <td class="news_current_column_width"><%= link_to 'more details', news.url %></td>
-    <td class="news_current_column_width"><%= news.published %></td>
+    <td class="news_current_column_width"><%= news.published.strftime("%F") %></td>
   </tr>
 <% end %>

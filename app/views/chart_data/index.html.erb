@@ -1,9 +1,11 @@
-</br><%= link_to 'Back to Latest News', current_news_path, class: "btn btn-info"%>
-<%= form_with url: display_chart_path, method: :get do |form| %>
+<%= link_to 'Back to Latest News', current_news_path, class: "btn btn-info m-4 d-block"%>
+
+<%= form_with url: display_chart_path, class: "m-4 d-block border border-info p-3", method: :get do |form| %>
+<h1>TRENDING</h1>
 <%= form.label :trend_text, "Search for:" %>
-<%= form.text_field :trend_text, required: true%>
+<%= form.text_field :trend_text, required: true, class: "m-4" %>
 <%= form.label :days_no, "number of prev days:" %>
-<%= form.text_field :days_no, required: true %></br>
+<%= form.text_field :days_no, required: true, class: "m-4" %>
 <%= form.submit "Search", class: "btn btn-success" %>
 <% end %>
 
