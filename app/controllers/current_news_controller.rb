@@ -1,9 +1,13 @@
 class CurrentNewsController < ApplicationController
   def index 
     @categories = Category.find_each
-    @categories_hash = Category.get_categories_as_hash(@categories)
 
     @current_news = get_current_news()
+
+    # to pass in for view stuff
+    @selected_published = fill_in_published()
+    @selected_category = fill_in_category_name()
+   
   end
 
   private
@@ -16,6 +20,22 @@ class CurrentNewsController < ApplicationController
       Date.civil(params[:published][:"date(1i)"].to_i,
         params[:published][:"date(2i)"].to_i,
         params[:published][:"date(3i)"].to_i) 
+    end
+
+    def fill_in_category_name()
+      if params[:select_category] == "1"
+        Category.find(category_id()).category_name
+      else
+        "All category"
+      end
+    end
+
+    def fill_in_published()
+      if params[:select_published] == "1"
+        published_date()
+      else
+        "Entire time"
+      end
     end
 
     def search_options()
