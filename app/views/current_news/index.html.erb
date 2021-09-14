@@ -16,7 +16,7 @@
     <td class="news_current_column_width"><span><%= news.title %></span></td>
     <td class="news_current_column_width"><%= news.author %></td>
     <td class="news_current_column_width"><%= news.language %></td>
-    <td class="news_current_column_width"><%= @categories[news.category_id] %></td> 
+    <td class="news_current_column_width"><%= news.category.category_name %></td> 
     <td class="news_current_column_width"><%= link_to 'more details', news.url %></td>
     <td class="news_current_column_width"><%= news.published %></td>
   </tr>
