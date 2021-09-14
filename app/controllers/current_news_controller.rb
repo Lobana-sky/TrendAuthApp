@@ -4,7 +4,7 @@ class CurrentNewsController < ApplicationController
 
     @current_news = get_current_news()
 
-    # to pass in for view stuff
+    # to pass in for view stuff for the user to know which date and which category he/she select
     @selected_published = fill_in_published()
     @selected_category = fill_in_category_name()
    
@@ -31,7 +31,7 @@ class CurrentNewsController < ApplicationController
     end
 
     def fill_in_published()
-      if params[:select_published] == "1"
+      if params[:select_published_date] == "1"
         published_date()
       else
         "Entire time"
