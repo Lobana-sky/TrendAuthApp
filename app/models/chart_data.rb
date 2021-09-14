@@ -10,11 +10,10 @@ class ChartData
     #go to start date so time will be the start date
     time = time.prev_day(day = no_of_days - 1)
     for i in 1..no_of_days
-    start_time = time.beginning_of_day().advance(hours: 3) # adjust hour to user hour
-    end_time = time.end_of_day().advance(hours: 3)
+    start_time = time.beginning_of_day()
+    end_time = time.end_of_day()
     # prev two lines to get start time 2021-09-13 00:00:00 -----  2021-09-13 23:59:59
-    #beginning_of_day() --> 2021-09-13 20:59:59 
-    #advance(hours: 3) ---> 2021-09-13 23:59:59
+    #beginning_of_day() --> 2021-09-13 00:00:00 
     search_results = CurrentNews.where('title like ?', "%#{search_word}%")
     .or(CurrentNews.where('description like ?', "%#{search_word}%"))
     .where(published: start_time...end_time).count

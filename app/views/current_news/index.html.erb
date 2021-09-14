@@ -8,8 +8,8 @@
 <%= select(:category, "id", @categories.collect {|category| [ category.category_name, category.id ]}) %>
 <%= form.check_box :select_category %>
 <%= form.submit "Search", class: "btn btn-success d-block" %>
-
 <% end %>
+
 <%= paginate @current_news %> 
 
 <table class="table mt-3">
@@ -26,6 +26,6 @@
     <td class="news_current_column_width"><%= news.author %></td>
     <td class="news_current_column_width"><%= @categories_hash[news.category_id] %></td> 
     <td class="news_current_column_width"><%= link_to 'more details', news.url %></td>
-    <td class="news_current_column_width"><%= news.published.strftime("%F") %></td>
+    <td class="news_current_column_width"><%= news.published %></td>
   </tr>
 <% end %>
