@@ -26,15 +26,15 @@ class CurrentNewsController < ApplicationController
       if params[:select_category] == "1"
         Category.find(category_id()).category_name
       else
-        "All category"
+        "All categories"
       end
     end
 
     def fill_in_published()
       if params[:select_published_date] == "1"
-        published_date()
+        "in " + published_date().to_s
       else
-        "Entire time"
+        "in Entire time"
       end
     end
 

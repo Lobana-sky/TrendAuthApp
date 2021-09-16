@@ -1,6 +1,6 @@
 <%= link_to 'Go to chart', display_chart_path, class: "btn btn-info m-4 d-block"%>
 
-<%= form_with url: current_news_path, class: "form-check m-4 d-block border border-info p-5", method: :get do |form| %>
+<%= form_with url: current_news_path, class: "form-check m-4 border border-info p-5", method: :get do |form| %>
 <%= form.label :published_date, "Current news in:" %>
 <%= date_select('published', 'date', :published_date => [:month, :day, :year])%>
 <%= form.check_box :select_published_date, class: "form-check-input"%></br>
@@ -11,7 +11,8 @@
 <% end %>
 
 <%= paginate @current_news %> 
-<h1><%= @selected_category%> "In" <%= @selected_published %></h1>
+
+<h1><%= @selected_category%> <%= @selected_published %></h1>
 <table class="table mt-3">
   <tr>
     <th>Title</th>

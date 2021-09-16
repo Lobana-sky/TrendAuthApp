@@ -22,7 +22,7 @@ class CurrentNewsResponseProccessingAndMapping
     end
 
     def fill_in_category_name(single_current_news_category_array)
-      if single_current_news_category_array.empty? #current news has no category name so its category is "NONE"
+      if single_current_news_category_array[0].blank? #current news has no category name so its category is "NONE"
         category_name = "NONE"
       else
         category_name = single_current_news_category_array[0]
