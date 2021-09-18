@@ -17,15 +17,15 @@ class CurrentNewsResponseProccessingAndMapping
     
     def get_category_id(single_news)
       category_name = fill_in_category_name(single_news['category'])
+      puts single_news
       category = check_category_to_add_and_return(category_name.upcase!)
       return category.id
     end
 
     def fill_in_category_name(single_current_news_category_array)
-      if single_current_news_category_array[0].blank? #current news has no category name so its category is "NONE"
+      category_name = single_current_news_category_array[0]
+      if category_name.blank?
         category_name = "NONE"
-      else
-        category_name = single_current_news_category_array[0]
       end
       return category_name
     end
