@@ -17,7 +17,6 @@ class CurrentNewsResponseProccessingAndMapping
     
     def get_category_id(single_news)
       category_name = fill_in_category_name(single_news['category'])
-      puts single_news
       category = check_category_to_add_and_return(category_name.upcase!)
       return category.id
     end

@@ -114,3 +114,11 @@ https://www.youtube.com/watch?v=_6YyLTL2BW4
 
 -- And in app/javascript/packs/application.js, add:
 * import "chartkick/chart.js"
+
+# Test
+* gem install rspec
+* rspec --init creat rspec folder
+
+
+* gem 'rsepc', '~> 3.0' #>= 3.0 && < 4.0
+* gem install rspec -v 3.0.0
