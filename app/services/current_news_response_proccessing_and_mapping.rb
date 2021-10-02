@@ -6,6 +6,8 @@ class CurrentNewsResponseProccessingAndMapping
 
   def call()
     mapped_latest_news = @latest_news.map do |single_news|
+      # if !CurrentNews.exists?(id_news: single_news['id'])
+      # if CurrentNews.find_by(id_news: single_news['id']).nil?
       unless CurrentNews.exists?(id_news: single_news['id'])
         category_id = get_category_id(single_news)
         news_attributes = get_mapped_single_current_news(single_news, category_id)
