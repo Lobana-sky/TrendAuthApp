@@ -3,6 +3,6 @@ class PagesController < ApplicationController
   end
 
   def index 
-    @users = User.all
+    @users = User.find_each
   end
 end
