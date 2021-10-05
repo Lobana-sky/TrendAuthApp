@@ -5,7 +5,7 @@ like how many news talk about "sports" subject in the last WEEK...
 
 
 # How many times to fetch
-Our system will fetch data from Curent News API twice a day - every 12 hours - at 04:00 am and 04:00 pm
+Our system will fetch data from Curent News API once a day - every day - at 04:00 am
 used *periodic tasks with sidekiq cron* 
 reference:
 * https://www.driftingruby.com/episodes/periodic-tasks-with-sidekiq-cron
