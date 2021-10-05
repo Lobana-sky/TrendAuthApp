@@ -4,7 +4,7 @@ class CurrentNewsResponseProccessingAndMapping
     @latest_news = latest_news
   end
 
-  def call()
+  def self.call()
     mapped_latest_news = @latest_news.map do |single_news|
       unless CurrentNews.exists?(id_news: single_news['id'])
         category_id = get_category_id(single_news)
@@ -15,13 +15,13 @@ class CurrentNewsResponseProccessingAndMapping
 
   private
     
-    def get_category_id(single_news)
+    def self.get_category_id(single_news)
       category_name = fill_in_category_name(single_news['category'])
       category = check_category_to_add_and_return(category_name.upcase!)
       return category.id
     end
 
-    def fill_in_category_name(single_current_news_category_array)
+    def self.fill_in_category_name(single_current_news_category_array)
       category_name = single_current_news_category_array[0]
       if category_name.blank?
         category_name = "NONE"
@@ -29,11 +29,11 @@ class CurrentNewsResponseProccessingAndMapping
       return category_name
     end
 
-    def check_category_to_add_and_return(category_name)
+    def self.check_category_to_add_and_return(category_name)
       PersistCategoryToDataBaseJob.perform_now(category_name)
     end
 
-    def get_mapped_single_current_news(single_news, category_id)
+    def self.get_mapped_single_current_news(single_news, category_id)
       single_news_attributes = {
         id_news: single_news['id'],
         title: single_news['title'],

@@ -122,3 +122,5 @@ https://www.youtube.com/watch?v=_6YyLTL2BW4
 
 * gem 'rsepc', '~> 3.0' #>= 3.0 && < 4.0
 * gem install rspec -v 3.0.0
+
+* rails stats: how much test did you cover from your code
