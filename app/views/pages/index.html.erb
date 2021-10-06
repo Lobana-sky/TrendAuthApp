@@ -1,24 +1,24 @@
 <h1>Dashbord</h1>
 <main>
-<h1 class= "text-center fs-3">Our Team</h1>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Email</th>
-      <th scope="col">Position</th>
-      <th scope="col">Sign in count</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @users.each do |user| %>
-    <tr>
-      <th scope="row"><%= user.id %></th>
-      <td><%= user.email %></td>
-      <td><%= user.admin ? "Admin" : "User" %></td>
-      <td><%= user.sign_in_count %></td>
-    </tr>
-    <% end %>
-  </tbody>
+  <h1 class= "text-center fs-3">Our Team</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Email</th>
+        <th scope="col">Position</th>
+        <th scope="col">Sign in count</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @users.each do |user| %>
+      <tr>
+        <th scope="row"><%= user.id %></th>
+        <td><%= user.email %></td>
+        <td><%= user.admin ? "Admin" : "User" %></td>
+        <td><%= user.sign_in_count %></td>
+      </tr>
+      <% end %>
+    </tbody>
   </table>
 </main>
