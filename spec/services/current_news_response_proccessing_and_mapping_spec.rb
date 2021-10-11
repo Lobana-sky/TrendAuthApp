@@ -10,7 +10,6 @@ RSpec.describe CurrentNewsResponseProccessingAndMapping, type: :service do
     before do
       CurrentNews.create!(:id_news => "a5467dd9-95d3-3333-bf65-551423333331", :category_id => category.id)
     end
-    
 
     context 'news is already in current_news table' do
       let(:news) { [{"id"=> "a5467dd9-95d3-3333-bf65-551423333331", "category"=> ['regional']}] }
@@ -19,7 +18,6 @@ RSpec.describe CurrentNewsResponseProccessingAndMapping, type: :service do
         expect(CurrentNewsResponseProccessingAndMapping.new(news).call).to eq([nil])
       end
     end
-
 
     context 'news is NOT in current_news table' do
       let(:news) { [{"id"=> "a5467dd9-95d3-3333-bf65-551423333332", "category"=> ['regional']}] }

@@ -35,5 +35,3 @@
 yarn-debug.log*
 .yarn-integrity
 .env
-/bin/
-/usr/bin/env
