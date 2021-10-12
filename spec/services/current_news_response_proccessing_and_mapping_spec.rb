@@ -3,7 +3,6 @@ require 'current_news_response_proccessing_and_mapping.rb'
 
 RSpec.describe CurrentNewsResponseProccessingAndMapping, type: :service do
 
-  CurrentNews.delete_all
   describe '.call' do
     let(:category) { Category.create!(:category_name => 'REGIONAL') }
  
