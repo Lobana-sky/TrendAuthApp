@@ -22,7 +22,12 @@ RSpec.describe FetchDataJob, type: :job do
 # Checking perform
   describe "#perform", :vcr => 'current_news' do
     it "enqueues a job for each news the API returns" do
-      expect(FetchDataJob.new.perform).to eql(Object)
+      expect { FetchDataJob.new.perform }
+      .to change(PersistSingleCurrentNewsToDataBaseJob.jobs, :size).by(50)
+
+
+
+      # expect(FetchDataJob.new.perform).to eql(Object)
       # expect { FetchDataJob.new.perform }.to change(PersistSingleCurrentNewsToDataBaseJob.jobs, :size).by(31)
 
       # assert_equal 0, FetchDataJob.new.jobs.size
