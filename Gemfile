@@ -69,6 +69,8 @@ end
 # Run against this stable release
 group :development, :test do
   gem 'rspec-rails', '~> 5.0.0'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 
