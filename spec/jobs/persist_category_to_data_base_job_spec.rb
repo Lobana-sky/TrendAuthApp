@@ -11,7 +11,6 @@ RSpec.describe PersistCategoryToDataBaseJob, type: :job do
       PersistCategoryToDataBaseJob.set(queue: "default").perform_later(category_name)
     }.to have_enqueued_job.with(category_name).on_queue("default").at(:no_wait)
   end
-
 # Checking perform
   describe "#perform", :vcr do
     category_name = 'CATEGORY'

@@ -10,7 +10,6 @@ RSpec.describe FetchDataJob, type: :job do
       FetchDataJob.set(wait_until: Time.zone.today.beginning_of_day, queue: "default").perform_later()
     }.to have_enqueued_job.on_queue("default").at(Time.zone.today.beginning_of_day)
   end
-  
   # Checking perform
   describe "#perform", :vcr => 'current_news' do
     it "enqueues a job for each news the API returns" do

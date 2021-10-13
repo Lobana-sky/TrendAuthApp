@@ -4,6 +4,7 @@ RSpec.describe PersistSingleCurrentNewsToDataBaseJob, type: :job do
   before do
     ActiveJob::Base.queue_adapter = :test
   end
+  
   it "PersistSingleCurrentNewsToDataBaseJob enqueued" do
     news = {
       id_news: "a5467dd9-95d3-4fd1-bf65-551424643527",
