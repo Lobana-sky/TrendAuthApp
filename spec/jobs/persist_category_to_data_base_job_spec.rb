@@ -30,11 +30,11 @@ RSpec.describe PersistCategoryToDataBaseJob, type: :job do
 # Checking perform
   describe "#perform", :vcr do
     category_name = 'CATEGORY'
-    it "add category to Category table if category name does not exist already" do
+    it "add category to category table" do
       expect { PersistCategoryToDataBaseJob.perform_now(category_name) }.to change(Category, :count).by(1)
     end
 
-    it "add category with category name" do
+    it "with 'CATEGORY' as category name" do
       PersistCategoryToDataBaseJob.perform_now(category_name)
       expect(Category.last.category_name).to eq(category_name)
     end

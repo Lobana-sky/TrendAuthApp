@@ -43,7 +43,7 @@ RSpec.describe PersistSingleCurrentNewsToDataBaseJob, type: :job do
       .to change(CurrentNews, :count).by(1)
     end
 
-    it "add news with current_news id" do
+    it "with 'a5467dd9-95d3-4fd1-bf65-551424643547' as id" do
       news = {
         id_news: "a5467dd9-95d3-4fd1-bf65-551424643547",
         category_id: category.id
