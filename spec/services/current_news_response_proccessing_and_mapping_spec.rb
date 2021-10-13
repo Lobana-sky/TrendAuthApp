@@ -21,55 +21,14 @@ RSpec.describe CurrentNewsResponseProccessingAndMapping, type: :service do
     context 'news is NOT in current_news table' do
       let(:news) { [{"id"=> "a5467dd9-95d3-3333-bf65-551423333332", "category"=> ['regional']}] }
 
-      it 'news should be added to returned array with "REGIONAL" as category name' do
-        category_name = 'regional'
-        category_id = category.id
-
-        expect(CurrentNewsResponseProccessingAndMapping.new(news).call.length).to eq(1)
+      it 'news should be added to returned array' do
+        expect(CurrentNewsResponseProccessingAndMapping.new(news).call).to eq(
+          [{:author=>nil, :category_id=>270, 
+          :description=>nil, :id_news=>"a5467dd9-95d3-3333-bf65-551423333332", 
+          :image=>nil, :language=>nil, :published=>nil, :title=>nil, :url=>nil}]
+        )
       end
     end
   end
 
 end
-
-
-
-
-        # expect(CurrentNewsResponseProccessingAndMapping.new(news).call).to eq([
-        #   {:author=>nil,
-        #    :category_id=>Category.find_or_initialize_by(category_name: "REGIONAL").id,
-        #    :description=>nil,
-        #    :id_news=>"a5467dd9-95d3-3333-bf65-551423333332",
-        #    :image=>nil,
-        #    :language=>nil,
-        #    :published=>nil,
-        #    :title=>nil,
-        #    :url=>nil}
-        #    ])
-
-
-
-    # context 'news is NOT in current_news table and category array is EMPTY' do
-    #   let(:news) { [{"id"=> "a5467dd9-95d3-3333-bf65-551423333333", "category"=> ['']}] }
- 
-    #   it 'news should be added to returned array with "NONE" as category name' do
-    #     # category_name = "NONE"
-    #     # category_none_id = category_none.id
-
-    #     expect(CurrentNewsResponseProccessingAndMapping.new(news).call).to eq([
-    #       {:author=>nil,
-    #        :category_id=>Category.find_or_initialize_by(category_name: "NONE").id,
-    #        :description=>nil,
-    #        :id_news=>"a5467dd9-95d3-3333-bf65-551423333333",
-    #        :image=>nil,
-    #        :language=>nil,
-    #        :published=>nil,
-    #        :title=>nil,
-    #        :url=>nil}
-    #        ])
-    #   end
-    # end
-    
-
-
-
