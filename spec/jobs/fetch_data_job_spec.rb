@@ -27,6 +27,5 @@ RSpec.describe FetchDataJob, type: :job do
     end
   end 
 
-
 end
 

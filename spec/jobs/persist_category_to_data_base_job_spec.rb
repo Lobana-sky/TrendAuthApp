@@ -40,5 +40,4 @@ RSpec.describe PersistCategoryToDataBaseJob, type: :job do
     end
   end 
 
-
 end
