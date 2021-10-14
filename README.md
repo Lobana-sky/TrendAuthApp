@@ -13,13 +13,22 @@
 # Web Page
 
 * Dashboard page
- ![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/dashboardAdmin.png)
+ ![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/images/dashboardAdmin.png)
 
 * Home page
-![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/Home%20Page.png)
+![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/images/Home_page.png)
 
 * Manage my account page
-![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/managemyaccount.png)
+![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/images/managemyaccount.png)
+
+* Chart with filter
+ ![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/images/chart_w_filter.png)
+
+* Current_news_group_category_published
+![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/images/Current_news_group_category_published.png)
+
+* lio_word_trend
+![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/images/lio_word_trend.png)
 
 
 * reference

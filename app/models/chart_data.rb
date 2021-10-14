@@ -1,7 +1,7 @@
 class ChartData
 
   def self.get_current_news_group_by_published
-    CurrentNews.group_by_day(:published).count
+    CurrentNews.group_by_week(:published).count
   end
 
   def self.get_trend_data(search_word, no_of_days)
