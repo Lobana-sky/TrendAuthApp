@@ -21,8 +21,8 @@
 * Manage my account page
 ![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/images/managemyaccount.png)
 
-* Chart with filter
- ![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/images/chart_w_filter.png)
+* Table with filter
+ ![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/images/table_w_filter.png)
 
 * Current_news_group_category_published
 ![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/images/Current_news_group_category_published.png)
