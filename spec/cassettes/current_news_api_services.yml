@@ -1,0 +1,209 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.currentsapi.services/v1/latest-news?apiKey=ppvVKctrJQz1oZb-RzjjrHr4fm34daUJqV-X3ZITDNbumJgL&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.currentsapi.services
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Date:
+      - Thu, 14 Oct 2021 18:50:06 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - api.currentsapi.services
+      X-Ratelimit-Remaining:
+      - '599'
+      X-Ratelimit-Limit:
+      - '600'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","news":[{"id":"d794d425-9c83-44fc-aff9-3e607a629ee5","title":"Eva
+        Longoria Is A Total Fashion Icon, And Here Are The Receipts","description":"Red
+        carpet QUEEN.","url":"https:\/\/www.buzzfeed.com\/morgansloss1\/eva-longoria-red-carpet-looks","author":"[{\"@type\":\"Person\",\"name\":\"Morgan
+        Sloss\",\"url\":\"https:\/\/www.buzzfeed.com\/morgansloss1\",\"jobTitle\":\"BuzzFeed
+        Staff\"}]","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-10\/11\/18\/enhanced\/7978e0daf9ee\/original-1129-1633977927-6.jpg?crop=1200:600;0,0%26downsize=1250:*","language":"en","category":["lifestyle"],"published":"2021-10-14
+        22:16:03 +0000"},{"id":"5e2f06a9-f676-48f6-be14-1e5329a651cb","title":"47
+        Ways To Upgrade Your Living Room That Don''t Require A Ton Of Work","description":"Time
+        to make your living room, liveable.","url":"https:\/\/www.buzzfeed.com\/elenamgarcia\/ways-upgrade-your-living-room-not-a-ton-of-work","author":"[{\"@type\":\"Person\",\"name\":\"Elena
+        Garcia\",\"url\":\"https:\/\/www.buzzfeed.com\/elenamgarcia\",\"jobTitle\":\"BuzzFeed
+        Staff\"}]","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-10\/11\/1\/campaign_images\/84beb8c254c9\/47-ways-to-upgrade-your-living-room-that-dont-req-2-9819-1633914168-2_dblbig.jpg","language":"en","category":["lifestyle"],"published":"2021-10-14
+        22:01:03 +0000"},{"id":"611927fc-6344-48a7-80ef-6726242dd812","title":"IT
+        expert finds issues with My Covid website ''within a few minutes''","description":"A
+        Christchurch IT expert has found security issues with the Government''s My
+        Covid website.\u00a0\nThe My Covid Record website is now accessible to the
+        public, in","url":"https:\/\/www.newstalkzb.co.nz\/on-air\/mike-hosking-breakfast\/audio\/daniel-ayers-it-security-expert-finds-issues-with-my-covid-website-within-a-few-minutes\/","author":"Newstalk
+        ZB","image":"https:\/\/www.newstalkzb.co.nz\/media\/7305871\/typing-on-computer-keyboard-matthew-bowden-stockxchng.jpg?mode=crop&width=635&height=395&rnd=132786737426300000","language":"en","category":["regional","christchurch"],"published":"2021-10-14
+        21:27:49 +0000"},{"id":"d2da3efc-c2b3-4f4f-b681-fb5f6cbaace9","title":"20
+        Scenes From \"Maid\" That Prove That Margaret Qualley Is The Moment","description":"Consider
+        this Margaret Qualley''s Emmy campaign.","url":"https:\/\/www.buzzfeed.com\/staceynguyen16\/20-best-margaret-qualley-moments-netflix-maid","author":"[{\"@type\":\"Person\",\"name\":\"Stacey
+        Nguyen\",\"url\":\"https:\/\/www.buzzfeed.com\/staceynguyen16\",\"jobTitle\":\"BuzzFeed
+        Contributor\"}]","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-10\/14\/17\/campaign_images\/619b20eb02e2\/20-scenes-from-maid-that-prove-that-margaret-qual-2-521-1634232423-47_dblbig.jpg","language":"en","category":["lifestyle"],"published":"2021-10-14
+        21:23:52 +0000"},{"id":"0c96a957-88c3-431a-8ef1-bd599699cf36","title":"CapitaLand
+        Buys Four Logistics Centers in China for $261 Million","description":"CapitaLand
+        sold partial stakes in June in six commercial property projects in China.\n\nCapitaLand
+        China Trust (CLCT), a subsidiary of Singapore\u2019s real estate conglomerate
+        CapitaLand Group, plans to inv...","url":"https:\/\/www.caixinglobal.com\/2021-10-14\/capitaland-buys-four-logistics-centers-in-china-for-261-million-101786306.html?Sfrom=twitter","author":"@Yang
+        Min and Denise Jia","image":"https:\/\/img.caixin.com\/2021-10-14\/163415755027232_560_373.jpg","language":"en","category":["regional"],"published":"2021-10-14
+        21:19:42 +0000"},{"id":"846dbe06-1fec-49a6-b4e6-8d04e9cddb37","title":"3 Habits
+        That Helped Me Retire In My 40s During The Pandemic","description":"In 2017,
+        I was a newly divorced single mom living paycheck to paycheck. Now I''m retired.","url":"https:\/\/www.buzzfeed.com\/lakishalsimmons\/how-i-retired-early-40s","author":"[{\"@type\":\"Person\",\"name\":\"Lakisha
+        L. Simmons, PhD\",\"url\":\"https:\/\/www.buzzfeed.com\/lakishalsimmons\",\"jobTitle\":\"BuzzFeed
+        Contributor\"}]","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-10\/14\/14\/campaign_images\/46d6dcede04c\/3-habits-that-helped-me-retire-in-my-40s-during-t-2-467-1634223014-55_dblbig.jpg","language":"en","category":["lifestyle"],"published":"2021-10-14
+        21:16:03 +0000"},{"id":"32bdc5b9-f0fe-4743-8fd4-b1e4a86ce2c5","title":"Apple
+        Finally Falls Victim to Never-Ending Supply Chain Crisis","description":"Apple
+        had expected to produce 90 million new iPhones this year, but it is now telling
+        manufacturing partners that the total will be lower\n\n(Bloomberg) \u2014
+        Apple Inc., the world\u2019s most valuable company, ...","url":"https:\/\/www.caixinglobal.com\/2021-10-14\/apple-finally-falls-victim-to-never-ending-supply-chain-crisis-101786302.html?Sfrom=twitter","author":"@","image":"https:\/\/img.caixin.com\/2021-10-14\/163415695583116_560_373.jpg","language":"en","category":["semicon","industry"],"published":"2021-10-14
+        21:13:27 +0000"},{"id":"6b49e9b7-f66f-4e1c-ac5d-deea3c834cbd","title":"Penn
+        Badgley Made Some Rare Comments About Fatherhood And What He Said Was So Sweet","description":"\"Even
+        being a father in a pandemic has still been a joy.\"","url":"https:\/\/www.buzzfeed.com\/alexgurley\/penn-badgley-life-as-a-dad","author":"[{\"@type\":\"Person\",\"name\":\"Alex
+        Gurley\",\"url\":\"https:\/\/www.buzzfeed.com\/alexgurley\",\"jobTitle\":\"BuzzFeed
+        Contributor\"}]","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-10\/14\/17\/campaign_images\/a12965061e48\/penn-badgley-made-some-rare-comments-about-father-2-456-1634231144-21_dblbig.jpg","language":"en","category":["lifestyle"],"published":"2021-10-14
+        21:05:07 +0000"},{"id":"9fee4445-0734-4ae3-b53e-e44b00d86b2e","title":"31
+        Stunning Pieces Of Furniture From Walmart That Hundreds Of Reviewers Already
+        Love","description":"And for good reason, too.","url":"https:\/\/www.buzzfeed.com\/courtneycummings\/reviewer-loved-furniture-from-walmart","author":"[{\"@type\":\"Person\",\"name\":\"Courtney
+        Cummings\",\"url\":\"https:\/\/www.buzzfeed.com\/courtneycummings\",\"jobTitle\":\"BuzzFeed
+        Contributor\"}]","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-10\/12\/15\/tmp\/2842af4f2285\/tmp-name-2-502-1634051418-14_dblbig.jpg","language":"en","category":["lifestyle"],"published":"2021-10-14
+        21:01:02 +0000"},{"id":"ebcf20b0-2996-4bef-8e19-4a144aba80b1","title":"Britney
+        Spears Subtly Called Out That Lookalike In \"The Justin Timberlake Video\"
+        For \"Cry Me A River\"","description":"\"Hmmmm something looks familiar...\"","url":"https:\/\/www.buzzfeed.com\/rachelbrodsky\/britney-spears-pageboy-hat-instagram-justin-timberlake-cry","author":"[{\"@type\":\"Person\",\"name\":\"Rachel
+        Brodsky\",\"url\":\"https:\/\/www.buzzfeed.com\/rachelbrodsky\",\"jobTitle\":\"BuzzFeed
+        Contributor\"}]","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-10\/14\/16\/enhanced\/6676598cc8c8\/original-11530-1634229696-18.jpg?crop=1002:501;1,48%26downsize=1250:*","language":"en","category":["lifestyle"],"published":"2021-10-14
+        20:58:45 +0000"},{"id":"1230332f-8103-40d8-9b0b-c9413d6b525e","title":"Megan
+        Thee Stallion Recalled How Un-Sssssssexy It Actually Was When Cardi B Suggested
+        They Use Live Snakes In The \"WAP\" Video","description":"\"If Cardi B is
+        saying she wants me to lay down with some snakes, I''ve got to lay down with
+        the snakes.''\"","url":"https:\/\/www.buzzfeed.com\/natashajokic1\/megan-thee-stallion-cardi-b-wap-snakes","author":"[{\"@type\":\"Person\",\"name\":\"Natasha
+        Jokic\",\"url\":\"https:\/\/www.buzzfeed.com\/natashajokic1\",\"jobTitle\":\"BuzzFeed
+        Staff\"}]","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-10\/14\/16\/enhanced\/906c4c24b8d2\/original-413-1634228976-6.jpg?crop=1246:623;4,50%26downsize=1250:*","language":"en","category":["lifestyle"],"published":"2021-10-14
+        20:39:57 +0000"},{"id":"4cf3174f-fa67-4d9b-8cda-3d5332824b52","title":"\"I''m
+        Coming In\": A Maintenance Man Tried To Break Into This Woman''s Apartment,
+        And The Text Exchange Is Truly Terrifying","description":"\"I''m coming in...
+        I just opened it.\"","url":"https:\/\/www.buzzfeed.com\/alexalisitza\/maintanence-man-tries-breaking-in-womans-apartment","author":"[{\"@type\":\"Person\",\"name\":\"Alexa
+        Lisitza\",\"url\":\"https:\/\/www.buzzfeed.com\/alexalisitza\",\"jobTitle\":\"BuzzFeed
+        Staff\"}]","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-10\/14\/15\/enhanced\/46d6dcede04c\/original-647-1634226776-22.jpg?crop=1660:830;0,0%26downsize=1250:*","language":"en","category":["lifestyle"],"published":"2021-10-14
+        20:33:14 +0000"},{"id":"1d27b6b2-ebdf-4074-b0a8-8b9050c92ee2","title":"Dakota
+        Johnson Was Serenaded By Chris Martin During A Concert, And I Love This Rare
+        PDA Moment For Them","description":"\"This is about my universe.\"","url":"https:\/\/www.buzzfeed.com\/emilymaeczachor\/dakota-johnson-serenaded-by-chris-martin-concert","author":"[{\"@type\":\"Person\",\"name\":\"Emily
+        Mae Czachor\",\"url\":\"https:\/\/www.buzzfeed.com\/emilymaeczachor\",\"jobTitle\":\"BuzzFeed
+        Staff\"}]","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-10\/14\/16\/enhanced\/46d6dcede04c\/original-731-1634227835-9.jpg?crop=1250:625;0,0%26downsize=1250:*","language":"en","category":["lifestyle"],"published":"2021-10-14
+        20:32:45 +0000"},{"id":"62c8336a-b109-4566-a060-0c62ade275b2","title":"tomato:  Mumbai:
+        Tomato, onion price rise skews household budgets | Mumbai News - Times of
+        India","description":"Tomato wholesaler Mangal Gupta said, \"Prices are commonly
+        higher by 20% in September-October, but this month due to heavy unseasonal
+        rains there is se","url":"https:\/\/timesofindia.indiatimes.com\/city\/mumbai\/mumbai-tomato-onion-price-rise-skews-household-budgets\/articleshow\/87026417.cms","author":"Bella
+        Jaisinghani","image":"https:\/\/static.toiimg.com\/thumb\/msid-87026492,width-1070,height-580,imgsize-41928,resizemode-75,overlay-toi_sw,pt-32,y_pad-40\/photo.jpg","language":"en","category":["general"],"published":"2021-10-14
+        20:23:08 +0000"},{"id":"2c9dde11-27df-4fcd-8a5e-f64d6a52671b","title":"amarinder
+        singh:   Centre''s BSF jurisdiction order: Punjab minister Pargat slams Amarinder,
+        he hits back | India News - Times of India","description":"India News: Punjab
+        minister Pargat Singh on Thursday slammed former CM Amarinder Singh, who voiced
+        his support for the Centre''s decision to extend the BSF''s juris","url":"https:\/\/timesofindia.indiatimes.com\/india\/centres-bsf-jurisdiction-order-punjab-minister-pargat-slams-amarinder-he-hits-back\/articleshow\/87026495.cms","author":"PTI","image":"https:\/\/static.toiimg.com\/thumb\/msid-87026601,width-1070,height-580,imgsize-37732,resizemode-75,overlay-toi_sw,pt-32,y_pad-40\/photo.jpg","language":"en","category":["general","opinion"],"published":"2021-10-14
+        20:22:45 +0000"},{"id":"2a75cf1c-2965-4f8d-9c9b-b5f112cfc88f","title":"How
+        \"Sex Education\" Avoided Being A Queer Cliche Disaster","description":"The
+        hit show has taken the world by storm and shown a future where storylines
+        of queer suffering are left behind","url":"https:\/\/www.buzzfeed.com\/markyoung\/how-sex-education-avoided-queer-cliches","author":"[{\"@type\":\"Person\",\"name\":\"Mark
+        Young\",\"url\":\"https:\/\/www.buzzfeed.com\/markyoung\",\"jobTitle\":\"BuzzFeed
+        Contributor\"}]","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-10\/13\/1\/enhanced\/c3157167f750\/original-412-1634088229-7.jpg?crop=1245:622;0,22%26downsize=1250:*","language":"en","category":["lifestyle"],"published":"2021-10-14
+        20:16:02 +0000"},{"id":"2e8e8fe1-6de0-4cee-9761-dd4303b5c8d4","title":"Right
+        Now, Amazon Is Offering Up To 30% Off Bose Products During Their Epic Daily
+        Deals","description":"This is your sign to finally get those headphones you''ve
+        been eyeing forever.","url":"https:\/\/www.buzzfeed.com\/abbykass\/bose-sale-amazon-daily-deals","author":"[{\"@type\":\"Person\",\"name\":\"Abby
+        Kass\",\"url\":\"https:\/\/www.buzzfeed.com\/abbykass\",\"jobTitle\":\"BuzzFeed
+        Staff\"}]","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-10\/14\/15\/enhanced\/6676598cc8c8\/original-11374-1634226345-13.jpg?crop=1660:830;0,0%26downsize=1250:*","language":"en","category":["lifestyle"],"published":"2021-10-14
+        20:13:41 +0000"},{"id":"3eb4af4f-e761-483f-b269-7538dd007abb","title":"vaishnaw:   Railways
+        to develop 500 multi-modal cargo terminals in 5 years with Rs 50,000 investment:
+        Union railway minister Ashwini Vaishnaw | India News - Times of India","description":"India
+        News: NEW DELHI: The Indian Railways has set the target to develop around
+        500 new multi-modal cargo terminals under the PM Gati Shakti programme with
+        an inv.","url":"https:\/\/timesofindia.indiatimes.com\/india\/railways-to-develop-500-multi-modal-cargo-terminals-in-5-years-with-rs-50000-investment-union-railway-minister-ashwini-vaishnaw\/articleshow\/87026384.cms","author":"Dipak
+        K Dash","image":"https:\/\/static.toiimg.com\/thumb\/msid-87026395,width-1070,height-580,imgsize-28314,resizemode-75,overlay-toi_sw,pt-32,y_pad-40\/photo.jpg","language":"en","category":["general"],"published":"2021-10-14
+        20:09:40 +0000"},{"id":"db274732-234e-4767-aaa5-c990f6575ea4","title":"\u2018Emissions
+        climbing to pre-pandemic levels in G20 countries\u2019 | India News - Times
+        of India","description":"India News: With lockdowns and restrictions gradually
+        being eased, greenhouse gas emissions are rebounding to pre-pandemic levels
+        across G20 countries, with India","url":"https:\/\/timesofindia.indiatimes.com\/india\/emissions-climbing-to-pre-pandemic-levels-in-g20-countries\/articleshow\/87025767.cms","author":"Neel
+        Kamal","image":"https:\/\/static.toiimg.com\/thumb\/msid-87026342,width-1070,height-580,imgsize-396858,resizemode-75,overlay-toi_sw,pt-32,y_pad-40\/photo.jpg","language":"en","category":["general"],"published":"2021-10-14
+        20:08:10 +0000"},{"id":"2373d814-ff95-4dae-a8c9-1350be0d1c7c","title":"India
+        re-elected to UN Human Rights Council for 6th term | India News - Times of
+        India","description":"India News: ndia on Thursday vowed to continue to work
+        for the promotion and protection of human rights after being re-elected to
+        the United Nations Human Rights ","url":"https:\/\/timesofindia.indiatimes.com\/india\/india-re-elected-to-un-human-rights-council-for-6th-term\/articleshow\/87026299.cms","author":"TIMESOFINDIA.COM","image":"https:\/\/static.toiimg.com\/thumb\/msid-87026330,width-1070,height-580,imgsize-77170,resizemode-75,overlay-toi_sw,pt-32,y_pad-40\/photo.jpg","language":"en","category":["general"],"published":"2021-10-14
+        20:06:24 +0000"},{"id":"660525c0-be4e-40c1-b690-0e5c018c1abb","title":"25
+        TV Show Characters With a Seriously Underrated Sense Of Style","description":"Janice
+        from <i>Friends<\/i> deserved WAY more style credit.","url":"https:\/\/www.buzzfeed.com\/valezabakolli\/tv-show-characters-with-underrated-style","author":"[{\"@type\":\"Person\",\"name\":\"Valeza
+        Bakolli\",\"url\":\"https:\/\/www.buzzfeed.com\/valezabakolli\",\"jobTitle\":\"BuzzFeed
+        Staff\"}]","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-10\/14\/7\/campaign_images\/6676598cc8c8\/25-tv-show-characters-that-had-a-truly-underrated-2-9999-1634194977-0_dblbig.jpg","language":"en","category":["lifestyle"],"published":"2021-10-14
+        20:04:02 +0000"},{"id":"121f59e8-5784-4400-8ad4-aa730c7abefc","title":"33
+        Soothing Things To Get You Through Mercury Retrograde","description":"Because
+        we could all use some relief.","url":"https:\/\/www.buzzfeed.com\/christineforbes\/soothing-things-to-get-you-through-mercury-retrograde","author":"[{\"@type\":\"Person\",\"name\":\"Christine
+        Forbes\",\"url\":\"https:\/\/www.buzzfeed.com\/christineforbes\",\"jobTitle\":\"BuzzFeed
+        Staff\"}]","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-10\/13\/20\/enhanced\/0b9f4c06e3d6\/original-406-1634156859-40.jpg?crop=1581:791;0,27%26downsize=1250:*","language":"en","category":["lifestyle"],"published":"2021-10-14
+        20:01:04 +0000"},{"id":"acad102b-7d30-498b-841c-053154513784","title":"PM
+        Modi enhanced value of Indian passport: Amit Shah | India News - Times of
+        India","description":"India News: Union home minister Amit Shah on Thursday
+        said Prime Minister Narendra Modi \"increased the value\" of Indian passports
+        abroad. \u201cThe entire world has ch","url":"https:\/\/timesofindia.indiatimes.com\/india\/modi-enhanced-value-of-indian-passport-amit-shah\/articleshow\/87025828.cms","author":"PTI","image":"https:\/\/static.toiimg.com\/thumb\/msid-87026032,width-1070,height-580,imgsize-54548,resizemode-75,overlay-toi_sw,pt-32,y_pad-40\/photo.jpg","language":"en","category":["general"],"published":"2021-10-14
+        19:56:33 +0000"},{"id":"8e683f4b-f035-41a7-9c4c-71c871ac580d","title":"bhutan:   India
+        takes note of China-Bhutan pact on boundary negotiations | India News - Times
+        of India","description":"India News: NEW DELHI: Bhutan on Thursday announced
+        that it firmed up a \"three-step roadmap\" for expediting the negotiations
+        with China to resolve the long-pendin.","url":"https:\/\/timesofindia.indiatimes.com\/india\/india-takes-note-of-china-bhutan-pact-on-boundary-negotiations\/articleshow\/87025213.cms","author":"PTI","image":"https:\/\/static.toiimg.com\/thumb\/msid-87025936,width-1070,height-580,imgsize-25018,resizemode-75,overlay-toi_sw,pt-32,y_pad-40\/photo.jpg","language":"en","category":["general"],"published":"2021-10-14
+        19:54:10 +0000"},{"id":"52c14de2-74d8-4b84-89eb-6b09cab0c366","title":"22
+        Tweets About The \"Squid Game\" Finale That''ll Help You Laugh The Pain Away","description":"Will
+        we ever recover from Episode 9 of <i>Squid Game<\/i>?","url":"https:\/\/www.buzzfeed.com\/jennaguillaume\/squid-game-finale-tweets","author":"[{\"@type\":\"Person\",\"name\":\"Jenna
+        Guillaume\",\"url\":\"https:\/\/www.buzzfeed.com\/jennaguillaume\",\"jobTitle\":\"BuzzFeed
+        Contributor\"}]","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-10\/14\/18\/campaign_images\/619b20eb02e2\/22-tweets-about-the-squid-game-finale-thatll-help-2-705-1634235860-11_dblbig.jpg","language":"en","category":["lifestyle"],"published":"2021-10-14
+        19:49:27 +0000"},{"id":"726e24ba-682b-48f3-a296-0afc03f370aa","title":"Student
+        Workers, We Want To Hear Your Wildest Stories From Working On Campus","description":"Let''s
+        be honest: college campuses could not run without student employees.","url":"https:\/\/www.buzzfeed.com\/amatullahshaw\/student-worker-confessions","author":"[{\"@type\":\"Person\",\"name\":\"Amatullah
+        Shaw\",\"url\":\"https:\/\/www.buzzfeed.com\/amatullahshaw\",\"jobTitle\":\"BuzzFeed
+        Staff\"}]","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-10\/13\/20\/enhanced\/4ce99d47c2b2\/original-1419-1634157955-36.jpg?crop=1250:625;0,74%26downsize=1250:*","language":"en","category":["lifestyle"],"published":"2021-10-14
+        19:46:05 +0000"},{"id":"3c74e0dc-bf89-4ad8-8f51-b4274bf4d31e","title":"16
+        Wild And Genius Plot Twists In TV Pilots That Instantly Got People Hooked
+        On The Show","description":"\"<i>How to Get Away With Murder<\/i> probably
+        had one of the best pilots I\u2019ve ever seen.\"","url":"https:\/\/www.buzzfeed.com\/ajanibazile\/best-tv-pilot-plot-twists","author":"[{\"@type\":\"Person\",\"name\":\"Ajani
+        Bazile\",\"url\":\"https:\/\/www.buzzfeed.com\/ajanibazile\",\"jobTitle\":\"BuzzFeed
+        Staff\"}]","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-10\/7\/20\/enhanced\/76a05be013cf\/original-405-1633637589-14.jpg?crop=1200:600;0,22%26downsize=1250:*","language":"en","category":["lifestyle"],"published":"2021-10-14
+        19:46:02 +0000"},{"id":"48076d91-eff1-4fc5-a493-b6f372ad3452","title":"shivaji
+        park:  Mumbai: CM Uddhav Thackeray inaugurates LED illumination at Shivaji
+        Park | Mumbai News - Times of India","description":"Chief minister Uddhav
+        Thackeray on Thursday inaugurated the new illumination of pathways and the
+        statue of Chhatrapati Shivaji Maharaj at Dadar\u2019s Shiv","url":"https:\/\/timesofindia.indiatimes.com\/city\/mumbai\/mumbai-cm-uddhav-thackeray-inaugurates-led-illumination-at-shivaji-park\/articleshow\/87024608.cms","author":"Chaitanya
+        Marpakwar","image":"https:\/\/static.toiimg.com\/thumb\/msid-87024749,width-1070,height-580,imgsize-68348,resizemode-75,overlay-toi_sw,pt-32,y_pad-40\/photo.jpg","language":"en","category":["general"],"published":"2021-10-14
+        19:40:18 +0000"},{"id":"60f6400e-625c-4263-bc4c-42f3c65f2f2a","title":"An
+        underwater mystery on Canada''s coast","description":"At the lowest tides,
+        Canada''s Comox estuary exposes a nearly forgotten story: the nubs of more
+        than 150,000 wooden stakes are spread out across the intertidal zone, forming
+        the remnants of hundreds of...","url":"https:\/\/www.bbc.com\/travel\/article\/20211013-an-underwater-mystery-on-canadas-coast?ocid=global_travel_rss","author":"Diane
+        Selkirk","image":"https:\/\/ychef.files.bbci.co.uk\/live\/624x351\/p09yct1y.jpg","language":"en","category":["travel","lifestyle"],"published":"2021-10-14
+        19:35:19 +0000"},{"id":"ef555b38-8646-411b-bdc6-c3b39ca67c10","title":"Alex
+        Murdaugh Is Facing New Charges Related To The Death Of His Housekeeper","description":"Murdaugh,
+        whose wife and son were shot dead in mysterious circumstances in June, allegedly
+        stole settlement funds from the sons of his housekeeper, who died in 2018.","url":"https:\/\/www.buzzfeednews.com\/article\/davidmack\/alex-murdaugh-charges-housekeeper","author":"David
+        Mack","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-10\/14\/15\/campaign_images\/6676598cc8c8\/alex-murdaugh-is-facing-new-charges-related-to-th-2-11303-1634225120-3_dblbig.jpg?resize=1200:*","language":"en","category":["lifestyle"],"published":"2021-10-14
+        19:32:36 +0000"}],"page":1}'
+  recorded_at: Thu, 14 Oct 2021 18:50:06 GMT
+recorded_with: VCR 6.0.0

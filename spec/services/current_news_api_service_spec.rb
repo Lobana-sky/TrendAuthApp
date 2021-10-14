@@ -1,7 +1,7 @@
 require 'rails_helper'
 require 'current_news_api_service'
 
-RSpec.describe CurrentNewsApiService, :type => :request do
+RSpec.describe CurrentNewsApiService, :vcr => 'current_news_api_services', :type => :request do
   
   it 'should return Current News data' do 
     news = CurrentNewsApiService.new({endpoint: 'latest-news'}).call()

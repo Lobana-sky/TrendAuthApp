@@ -62,16 +62,16 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver'
+  gem 'rspec-sidekiq'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 # Run against this stable release
 group :development, :test do
   gem 'rspec-rails', '~> 5.0.0'
-  gem 'rspec-sidekiq'
-  gem 'vcr'
-  gem 'webmock'
 end
 
 
