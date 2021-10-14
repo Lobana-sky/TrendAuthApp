@@ -16,7 +16,7 @@
  ![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/images/dashboardAdmin.png)
 
 * Home page
-![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/images/Home_page.png)
+![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/images/home_page.png)
 
 * Manage my account page
 ![alt text](https://github.com/Lobana-sky/AuthRegistration/blob/main/images/managemyaccount.png)
