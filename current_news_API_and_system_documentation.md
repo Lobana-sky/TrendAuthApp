@@ -36,7 +36,7 @@ we have three situations for the receiving current_news:
 "image":"https:\/\/inteng-storage.s3.amazonaws.com\/img\/iea\/4N61QY4K6J\/sizes\/shark-virgin-birth_md.jpg",
 "language":"en",
 
-"category_id": will get the category id from category table where the category name is "None",
+"category_id": 682 will get the category id from category table where the category name is "None",
 
 "published":"2021-08-30 00:00:00 +0000"
 

@@ -30,7 +30,7 @@ class CurrentNewsResponseProccessingAndMapping
     end
 
     def check_category_to_add_and_return(category_name)
-      PersistCategoryToDataBaseJob.perform_now(category_name)
+      PersistCategoryToDataBaseJob.perform_now(category_name) #string argument
     end
 
     def get_mapped_single_current_news(single_news, category_id)

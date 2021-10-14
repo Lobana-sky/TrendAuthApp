@@ -1,36 +1,36 @@
 <%= link_to 'Back to Latest News', current_news_path, class: "btn btn-info m-4 d-block"%>
 
 <%= form_with url: display_chart_path, class: "m-4 d-block border border-info p-3", method: :get do |form| %>
-<h1>TRENDING</h1>
-<%= form.label :trend_text, "Search for:" %>
-<%= form.text_field :trend_text, required: true, class: "m-4" %>
-<%= form.label :days_no, "number of prev days:" %>
-<%= form.text_field :days_no, required: true, class: "m-4" %>
-<%= form.submit "Search", class: "btn btn-success" %>
+  <h1>TRENDING</h1>
+  <%= form.label :trend_text, "Search for:" %>
+  <%= form.text_field :trend_text, required: true, class: "m-4" %>
+  <%= form.label :days_no, "number of prev days:" %>
+  <%= form.text_field :days_no, required: true, class: "m-4" %>
+  <%= form.submit "Search", class: "btn btn-success" %>
 <% end %>
 
 <hr/>
 <div class="chart_section">
-<% if @show_trend_chart %>
+  <% if @show_trend_chart %>
   <h2>Trend "<%= @search_word %>"</h2>
   <%= column_chart @trend_data,
    colors: ["#b00", "#666", "#aa1", "#ff3"]%>
   <hr/>
-<% end %>
+  <% end %>
 </div>
 
 <div class="chart_section">
-<h2 class="mb-4">Current News group category by published date</h2>
-<%= line_chart @categories.map {|category|
- {name: category.category_name,
-  data: category.current_news.group_by_day(:published).count}
-}%>
+  <h2 class="mb-4">Current News group category by published date</h2>
+  <%= line_chart @categories.map {|category|
+  {name: category.category_name,
+    data: category.current_news.group_by_day(:published).count}
+  }%>
 </div>
 
 <hr/>
 <div class="chart_section">
-<%= pie_chart @current_news_by_published,
-title: "Current News group published", download: true%>
+  <%= pie_chart @current_news_by_published,
+  title: "Current News group published", download: true%>
 </div>
 
 <hr/>
