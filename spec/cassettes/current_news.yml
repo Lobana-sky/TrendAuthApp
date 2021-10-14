@@ -1,0 +1,210 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.currentsapi.services/v1/latest-news?apiKey=ppvVKctrJQz1oZb-RzjjrHr4fm34daUJqV-X3ZITDNbumJgL&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.currentsapi.services
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Date:
+      - Tue, 12 Oct 2021 12:05:25 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - api.currentsapi.services
+      X-Ratelimit-Remaining:
+      - '599'
+      X-Ratelimit-Limit:
+      - '600'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","news":[{"id":"902e3085-f885-4194-95c0-e453d56d9ace","title":"Durian
+        export value grows by RM74.8mil since 2016","description":"KUALA LUMPUR: In
+        the five years since 2016, the value of durian exports abroad has grown by
+        RM74.8 million or 107 per cent, said Deputy Agriculture and Food Industries
+        Minister I Datuk Seri Ahmad Hamzah.","url":"https:\/\/www.thestar.com.my\/business\/business-news\/2021\/10\/12\/durian-export-value-grows-by-rm748mil-since-2016","author":"The
+        Star Online","image":"https:\/\/apicms.thestar.com.my\/uploads\/images\/2021\/10\/12\/1328324.jpg","language":"en","category":["regional","kuala-lumpur"],"published":"2021-10-12
+        16:16:00 +0000"},{"id":"1eacf55a-290c-40ab-ae9b-812aad07d321","title":"Opinion
+        | Need a dose of humor in your day? Chat with Alexandra Petri.","description":"Opinions
+        Live Chats Explore our columnists and live commentary\n\nRecent chats: What
+        do Republicans hope to achieve by not raising the debt ceiling? Chat with
+        Eugene Robinson. | What has a vole ever don...","url":"https:\/\/www.washingtonpost.com\/opinions\/2021\/10\/12\/alexandra-petri-chat-opinions\/","author":"Alexandra
+        Petri","image":"https:\/\/www.washingtonpost.com\/wp-apps\/imrs.php?src=https:\/\/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com\/public\/EG627I25J5BPHN53PLD6DZCV5I.jpg&w=1440","language":"en","category":["opinion"],"published":"2021-10-12
+        15:00:13 +0000"},{"id":"80b08f3c-fc6d-48a6-842c-be3f0b0d054a","title":"Must-have
+        skills for a media startup CEO: Barak Ronen of CRUX","description":"Credit:
+        Courtesy of Barak Ronen (above) CEO of Crux\n\nWe are seeing a proliferation
+        of media startups trying to innovate the news industry. But becoming the head
+        honcho of these enterprises is sometime...","url":"https:\/\/www.journalism.co.uk\/news\/must-have-skills-for-a-media-startup-ceo-barak-ronen-of-crux\/s2\/a866204\/","author":"Jacob
+        Granger","image":"https:\/\/www.journalism.co.uk\/assets\/1\/BR3.PNG","language":"en","category":["journalism"],"published":"2021-10-12
+        14:56:00 +0000"},{"id":"7d31627b-3e2f-4b83-a461-4565f84bcf9a","title":"Moody\u2019s:
+        US manufacturing vulnerable to US tariffs on imports from China","description":"KUALA
+        LUMPUR: US manufacturing is particularly vulnerable to US tariffs on imports
+        from China because tariffs affect the large intermediate inputs, Moody\u2019s
+        Investors Service said.","url":"https:\/\/www.thestar.com.my\/business\/business-news\/2021\/10\/12\/moodys-us-manufacturing-vulnerable-to-us-tariffs-on-imports-from-china","author":"The
+        Star Online","image":"https:\/\/apicms.thestar.com.my\/uploads\/images\/2021\/10\/12\/1328185.jpg","language":"en","category":["regional","kuala-lumpur"],"published":"2021-10-12
+        14:44:00 +0000"},{"id":"5471fd4a-a81d-475a-baac-88564648c262","title":"New
+        chapter opened in Afghanistan, world relations: Taliban FM - Bhaskar Live
+        English News","description":"Doha\/Kabul, Oct 12 | The Taliban-led government
+        in Afghanistan has \u201copened a new chapter\u201d in relations with the
+        international community by sending a message of good ties to the world, said
+        Acting Foreign Minister Amir Khan Muttaqi. He made the remarks while addressing
+        an event on Monday organised by...","url":"https:\/\/www.bhaskarlive.in\/new-chapter-opened-in-afghanistan-world-relations-taliban-fm\/","author":"Bhaskar
+        Live","image":"None","language":"en","category":["regional","doha"],"published":"2021-10-12
+        14:23:07 +0000"},{"id":"5243ec99-ddb4-4795-b595-58b0bbda1d82","title":"Lockdown
+        ends for 3,000 La Palma residents as volcano cloud passes - Times of India","description":"Europe
+        News: More than three thousand residents of La Palma were told on Tuesday
+        they can leave their homes after authorities ended a lockdown caused by a
+        thick cl","url":"https:\/\/timesofindia.indiatimes.com\/world\/europe\/lockdown-ends-for-3000-la-palma-residents-as-volcano-cloud-passes\/articleshow\/86964585.cms","author":"Reuters","image":"https:\/\/static.toiimg.com\/thumb\/msid-86964730,width-1070,height-580,imgsize-14008,resizemode-75,overlay-toi_sw,pt-32,y_pad-40\/photo.jpg","language":"en","category":["science","technology"],"published":"2021-10-12
+        14:23:03 +0000"},{"id":"42f61ae9-fe2e-4ac1-9446-b5959b89ee3c","title":"Spain
+        evacuates 84 Afghan refugees in second phase, flight lands in Madrid","description":"On
+        Monday, a plane carrying 84 Afghan migrants landed at a military site outside
+        Madrid in the second phase of the evacuation.","url":"https:\/\/www.republicworld.com\/world-news\/europe\/spain-evacuates-84-afghan-refugees-in-second-phase-flight-lands-in-madrid.html","author":"Rohit
+        Ranjan","image":"https:\/\/img.republicworld.com\/republic-prod\/stories\/promolarge\/xhdpi\/ndbh3s4tylyqpcdg_1634027386.jpeg","language":"en","category":["regional","madrid"],"published":"2021-10-12
+        14:16:00 +0000"},{"id":"01017328-82b5-438f-a9e5-084e5e3f09f4","title":"Magnitude
+        6.3 earthquake jolts Greek island of Crete - Times of India","description":"Europe
+        News: ATHENS: A strong earthquake has jolted the Greek island of Crete, three
+        weeks after another temblor killed a man on the island and damaged hundreds
+        of.","url":"https:\/\/timesofindia.indiatimes.com\/world\/europe\/magnitude-6-3-earthquake-jolts-greek-island-of-crete\/articleshow\/86964306.cms","author":"AP","image":"https:\/\/static.toiimg.com\/thumb\/msid-86964315,width-1070,height-580,imgsize-29436,resizemode-75,overlay-toi_sw,pt-32,y_pad-40\/photo.jpg","language":"en","category":["science","technology"],"published":"2021-10-12
+        14:01:24 +0000"},{"id":"d1051d16-f26f-47e8-b4a5-af2a7b36dc1d","title":"Govt
+        allows power plants to blend imported coal with local grade - Times of India","description":"India
+        Business News:  India on Tuesday allowed power producers to expedite imports
+        of coal to use for up to 10% of blends with the domestic grade to meet increased
+        power d","url":"https:\/\/timesofindia.indiatimes.com\/business\/india-business\/govt-allows-power-plants-to-blend-imported-coal-with-local-grade\/articleshow\/86963951.cms","author":"Reuters","image":"https:\/\/static.toiimg.com\/thumb\/msid-86963928,width-1070,height-580,imgsize-74766,resizemode-75,overlay-toi_sw,pt-32,y_pad-40\/photo.jpg","language":"en","category":["business"],"published":"2021-10-12
+        13:59:16 +0000"},{"id":"73bd7265-1311-4170-9b2f-d7dba224ecb4","title":"Oil
+        slips, takes breather after gains driven by global energy crisis","description":"TOKYO:
+        Oil prices edged lower on Tuesday, dropping for the first time in four days
+        in what analysts called a breather after weeks of gains fuelled by a rebound
+        in global demand that is contributing to energy shortages in major economies.","url":"https:\/\/www.thestar.com.my\/business\/business-news\/2021\/10\/12\/oil-slips-takes-breather-after-gains-driven-by-global-energy-crisis","author":"The
+        Star Online","image":"https:\/\/apicms.thestar.com.my\/uploads\/images\/2021\/10\/12\/1328053.jpg","language":"en","category":["regional","tokyo"],"published":"2021-10-12
+        13:55:00 +0000"},{"id":"3d8fae76-7832-4925-a3c0-744a3515d594","title":"Japanese
+        astronaut Wakata to fly to space on Crew Dragon mission in fall 2022 - Times
+        of India","description":"Rest of World News: Japanese astronaut Koichi Wakata
+        will join the fifth Crew Dragon space mission to fly to the International
+        Space Station (ISS) next year, the Japan Ae","url":"https:\/\/timesofindia.indiatimes.com\/world\/rest-of-world\/japanese-astronaut-wakata-to-fly-to-space-on-crew-dragon-mission-in-fall-2022\/articleshow\/86963921.cms","author":"ANI","image":"https:\/\/static.toiimg.com\/thumb\/msid-86963990,width-1070,height-580,imgsize-36976,resizemode-75,overlay-toi_sw,pt-32,y_pad-40\/photo.jpg","language":"en","category":["science","technology"],"published":"2021-10-12
+        13:44:42 +0000"},{"id":"2f2bd752-5035-4a04-b94d-9b2d77d724df","title":"Taliban
+        struggling with new \u2018counterinsurgent\u2019 role - Times of India","description":"South
+        Asia News: Afghanistan\u2019s stability rests on a knife''s edge as a series
+        of bloody attacks launched by Islamic State Khorasan Province (ISIS-K) threatens
+        the autho","url":"https:\/\/timesofindia.indiatimes.com\/world\/south-asia\/taliban-struggling-with-new-counterinsurgent-role\/articleshow\/86963682.cms","author":"TIMESOFINDIA.COM","image":"https:\/\/static.toiimg.com\/thumb\/msid-86963721,width-1070,height-580,imgsize-1629440,resizemode-75,overlay-toi_sw,pt-32,y_pad-40\/photo.jpg","language":"en","category":["science","technology"],"published":"2021-10-12
+        13:34:44 +0000"},{"id":"f4e38ea0-9e8f-4fc4-8dcc-fef63a5c6d86","title":"Hong
+        Kong closes schools and raises typhoon warning - Times of India","description":"Rest
+        of World News: HONG KONG: Hong Kong authorities closed schools on Tuesday
+        and raised the third highest storm warning as a typhoon threatened the financial
+        hub for th.","url":"https:\/\/timesofindia.indiatimes.com\/world\/rest-of-world\/hong-kong-closes-schools-and-raises-typhoon-warning\/articleshow\/86963563.cms","author":"Reuters","image":"https:\/\/static.toiimg.com\/thumb\/msid-86963684,width-1070,height-580,imgsize-56748,resizemode-75,overlay-toi_sw,pt-32,y_pad-40\/photo.jpg","language":"en","category":["science","technology"],"published":"2021-10-12
+        13:31:41 +0000"},{"id":"6d2d847d-21eb-4cda-acc9-6173f1558461","title":"14
+        Grandma Approved Cooking Hacks That Will Basically Turn You Into A Masterchef","description":"7.\n\nIf
+        you hate peeling garlic, you might like this trick. Before peeling the garlic
+        cloves , rub them with some oil and dry them in the sun for about half an
+        hour, and voila, the skin comes off so mu...","url":"https:\/\/www.buzzfeed.com\/swapnaravichandran\/cooking-hacks-to-elevate-culinary-skills","author":"[{\"@type\":\"Person\",\"name\":\"Swapna\",\"url\":\"https:\/\/www.buzzfeed.com\/swapnaravichandran\",\"jobTitle\":\"BuzzFeed
+        Staff\"}]","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-09\/23\/8\/enhanced\/aa074b885039\/original-2362-1632386197-16.jpg?crop=1243:651;0,65%26downsize=1250:*","language":"en","category":["food","lifestyle"],"published":"2021-10-12
+        13:31:02 +0000"},{"id":"b6c7ab43-beb5-4cb9-862b-cb2b94bf192e","title":"Vanessa
+        Hudgens Got Relatable About Being Expected To Get Married At A Certain Age
+        And Why It''s Fine She''s Not","description":"\"Where I am now is better than
+        I could have dreamed of.\"","url":"https:\/\/www.buzzfeed.com\/larryfitzmaurice\/vanessa-hudgens-married-25","author":"[{\"@type\":\"Person\",\"name\":\"larryfitzmaurice\",\"url\":\"https:\/\/www.buzzfeed.com\/larryfitzmaurice\",\"jobTitle\":\"BuzzFeed
+        Staff\"}]","image":"https:\/\/img.buzzfeed.com\/buzzfeed-static\/static\/2021-10\/12\/3\/campaign_images\/8372cd2d3c66\/vanessa-hudgens-explained-why-she-thought-she-wou-2-1311-1634008193-24_dblbig.jpg","language":"en","category":["lifestyle"],"published":"2021-10-12
+        13:25:04 +0000"},{"id":"b9834c4b-1626-43fa-85d5-67422bd4f24b","title":"Maybank
+        achieves full vaccination for all branch employees","description":"KUALA LUMPUR:
+        Maybank has announced that all employees at its branches nationwide have been
+        fully vaccinated against Covid-19.","url":"https:\/\/www.thestar.com.my\/business\/business-news\/2021\/10\/12\/maybank-achieves-full-vaccination-for-all-branch-employees","author":"The
+        Star Online","image":"https:\/\/apicms.thestar.com.my\/uploads\/images\/2021\/10\/12\/1328017.JPG","language":"en","category":["regional","kuala-lumpur"],"published":"2021-10-12
+        13:01:00 +0000"},{"id":"0a08fef1-6951-4bdf-978d-8c07199b6e5b","title":"Banks
+        rally to keep market on an uptrend","description":"KUALA LUMPUR: The FBM KLCI
+        bounced higher on continued investor positivity after spending a brief time
+        in the red earlier today.","url":"https:\/\/www.thestar.com.my\/business\/business-news\/2021\/10\/12\/banks-rally-to-keep-market-on-an-uptrend","author":"The
+        Star Online","image":"https:\/\/apicms.thestar.com.my\/uploads\/images\/2021\/10\/12\/1328010.JPG","language":"en","category":["regional","kuala-lumpur"],"published":"2021-10-12
+        12:50:00 +0000"},{"id":"df85779e-0607-4e3c-a57d-76c2d1db5465","title":"Amazon,
+        Walmart brace for crucial Diwali showdown - Times of India","description":"India
+        Business News: To the humming whir of giant overhead fans, they scurry around
+        the vast metal-covered depot, sorting parcels by zip code and tossing them
+        into giant c","url":"https:\/\/timesofindia.indiatimes.com\/business\/india-business\/amazon-walmart-brace-for-crucial-diwali-showdown\/articleshow\/86962951.cms","author":"Bloomberg","image":"https:\/\/static.toiimg.com\/thumb\/msid-86962923,width-1070,height-580,imgsize-19348,resizemode-75,overlay-toi_sw,pt-32,y_pad-40\/photo.jpg","language":"en","category":["business"],"published":"2021-10-12
+        12:45:33 +0000"},{"id":"1121832e-e165-4978-9e66-0fea10af101b","title":"Dubai
+        real estate recovery ''fragile'' and uneven, S&P says - Times of India","description":"International
+        Business News: DUBAI: Dubai real estate prices have rebounded strongly from
+        a record low at the end of 2020, but demand is uneven and oversupply of residential
+        prope.","url":"https:\/\/timesofindia.indiatimes.com\/business\/international-business\/dubai-real-estate-recovery-fragile-and-uneven-sp-says\/articleshow\/86962527.cms","author":"Reuters","image":"https:\/\/static.toiimg.com\/thumb\/msid-86962635,width-1070,height-580,imgsize-12546,resizemode-75,overlay-toi_sw,pt-32,y_pad-40\/photo.jpg","language":"en","category":["business"],"published":"2021-10-12
+        12:29:03 +0000"},{"id":"879680cf-c7d1-4042-9eb5-9fe491a388dc","title":"Issue
+        of Shares and PDMR Dealing , price: 220.00 -","description":"London Stock
+        Exchange plc is not responsible for and does not check content on this Website.
+        Website users are responsible for checking content. Any news item (including
+        any prospectus) which is addre...","url":"https:\/\/www.londonstockexchange.com\/news-article\/FNTL\/issue-of-shares-and-pdmr-dealing\/15170501","author":"RNS","image":"https:\/\/www.londonstockexchange.com\/favicon.ico","language":"en","category":["exchange","stock"],"published":"2021-10-12
+        12:26:58 +0000"},{"id":"f4eb9dc6-60b9-42bd-994b-8485e1670dbe","title":"Why
+        Joe Biden should follow Canada and go big on private refugee resettlement","description":"Now
+        is the time for US President Joe Biden to ask the American people to invite
+        homeless and war-ravaged Afghan refugees into their homes and their communities","url":"https:\/\/www.firstpost.com\/world\/why-joe-biden-should-follow-canada-and-go-big-on-private-refugee-resettlement-10047931.html","author":"The
+        Conversation","image":"https:\/\/images.firstpost.com\/wp-content\/uploads\/2021\/02\/statue-liberty640.jpg","language":"en","category":["regional","ho-chi-minh"],"published":"2021-10-12
+        12:21:49 +0000"},{"id":"9dd0770b-a3b9-4c25-be3e-add20e25aea8","title":"T20
+        World Cup 2021: Virat Kohli-led India have too much ammunition for Pakistan,
+        says Lance Klusener | Cricket News - Times of India","description":"Cricket
+        News: Team India will kick off their ICC World T20 campaign against arch-rivals
+        Pakistan on October 24. The high-octane clash will be played at the Dubai
+        In","url":"https:\/\/timesofindia.indiatimes.com\/sports\/cricket\/icc-mens-t20-world-cup\/icc-world-t20-virat-kohli-led-india-have-too-much-ammunition-for-pakistan-says-lance-klusener\/articleshow\/86961771.cms","author":"Amit
+        Kumar","image":"https:\/\/static.toiimg.com\/thumb\/msid-86962200,width-1070,height-580,imgsize-76206,resizemode-75,overlay-toi_sw,pt-32,y_pad-40\/photo.jpg","language":"en","category":["sports"],"published":"2021-10-12
+        12:07:39 +0000"},{"id":"3a3a79c6-7892-4127-8f29-800bdb4cbe63","title":"Director\/PDMR
+        Shareholding, price: 198.80 -","description":"London Stock Exchange plc is
+        not responsible for and does not check content on this Website. Website users
+        are responsible for checking content. Any news item (including any prospectus)
+        which is addre...","url":"https:\/\/www.londonstockexchange.com\/news-article\/SBRE\/director-pdmr-shareholding\/15170478","author":"RNS","image":"https:\/\/www.londonstockexchange.com\/favicon.ico","language":"en","category":["exchange","stock"],"published":"2021-10-12
+        12:06:29 +0000"},{"id":"c1d1923f-27a5-4237-aaa6-aca10e4c1327","title":"Holding(s)
+        in Company, price: 38.00 + -1.55%","description":"London Stock Exchange plc
+        is not responsible for and does not check content on this Website. Website
+        users are responsible for checking content. Any news item (including any prospectus)
+        which is addre...","url":"https:\/\/www.londonstockexchange.com\/news-article\/GMAA\/holding-s-in-company\/15170475","author":"RNS","image":"https:\/\/www.londonstockexchange.com\/favicon.ico","language":"en","category":["exchange","stock"],"published":"2021-10-12
+        12:03:03 +0000"},{"id":"7d6b9354-31a7-4083-bc28-98666ebb5ef3","title":"Netflix
+        stands by Dave Chappelle amid controversy over his new show &#8216;The Closer&#8217;","description":"Netflix
+        has defended its decision to air Dave Chappelle''s new comedy special ''The
+        Closer,'' arguing the controversial show does not equate to hate speech.\n\nCritics
+        claim the special, where Mr Chappelle criticises some trans activists, is
+        anti-LGBTQ and transphobic. \n\nIn a memo obtained by online outl...","url":"https:\/\/www.news.com.au\/world\/netflix-stands-by-dave-chappelle-amid-controversy-over-his-new-show-the-closer\/video\/a01651d061e2880a5bd394e574c345a1","author":"news","image":"https:\/\/content.api.news\/v3\/images\/bin\/beb330be20b312a6f32025aeeaa3c191","language":"en","category":["world","international"],"published":"2021-10-12
+        12:01:53 +0000"},{"id":"d5d6e4c8-8ab0-428c-9c18-ea9e1df458aa","title":"Taiwanese
+        &#8216;only too happy&#8217; to get &#8216;plenty of coverage&#8217; of Tony
+        Abbott&#8217;s meeting","description":"Bondi Partners National Security Advisor
+        Mark Watson says the Taiwanese were \"only too happy\" to get plenty of coverage
+        of Tony Abbott''s meeting with the country''s president. \n\nFormer Prime
+        Minister Tony Abbott recently visited Taiwan, delivering a speech in which
+        he addressed Beijing\u2019s aggression, ...","url":"https:\/\/www.news.com.au\/world\/taiwanese-only-too-happy-to-get-plenty-of-coverage-of-tony-abbotts-meeting\/video\/f7e3fe55cad196a2aec293aaa4ce283a","author":"news","image":"https:\/\/content.api.news\/v3\/images\/bin\/63c8790466f9e1e06f50a28203332cb4","language":"en","category":["world","international"],"published":"2021-10-12
+        12:01:53 +0000"},{"id":"0540b5a3-f871-45c6-8657-098cc3a49c3e","title":"Kamala
+        Harris\u2019 cringe-worthy stunt","description":"A video meant to sell children
+        on the wonders of space exploration featured US Vice President Kamala Harris
+        giving a memorable performance alongside a quintet of child actors who auditioned
+        for their roles, it has been revealed.","url":"https:\/\/www.news.com.au\/world\/north-america\/us-politics\/child-actors-used-for-us-vice-president-kamala-harris-bizarre-space-video\/news-story\/3a3e497f152b2732c1cd607d07936476","author":"Samuel
+        Chamberlain, NY Post","image":"https:\/\/content.api.news\/v3\/images\/bin\/04b577e0039a2f4487106ecc31e26ff4","language":"de","category":["world","international"],"published":"2021-10-12
+        12:01:53 +0000"},{"id":"a4222a44-0040-4059-9fa9-e76f703c1d35","title":"Australia
+        must get rid of \u2018millions\u2019 of AstraZeneca jabs","description":"Australia
+        must send its 6 million excess doses of AstraZeneca overseas to help struggling
+        countries and ensure the highly-effective vaccine brand does not go to waste.","url":"https:\/\/www.news.com.au\/world\/coronavirus\/australia\/australia-should-send-millions-of-spare-astrazeneca-overseas\/news-story\/eed4718cc32c8134e485a1d84cf471c1","author":"Helena
+        Burke","image":"https:\/\/content.api.news\/v3\/images\/bin\/f0c44771ae8653aa9c96029b7219311f","language":"en","category":["world","international"],"published":"2021-10-12
+        12:01:53 +0000"},{"id":"74f65e92-0ef3-45b1-b160-d31f3700f323","title":"DeSantis
+        slams activists who wish to ''defame'' explorer Christopher Columbus","description":"Florida
+        Governor Ron DeSantis has slammed those who wish to \"defame\" the legacy
+        of explorer Christopher Columbus.","url":"https:\/\/www.news.com.au\/world\/desantis-slams-activists-who-wish-to-defame-explorer-christopher-columbus\/video\/c2f9b9fc6b747ffe9981e150bf37a967","author":"news","image":"https:\/\/content.api.news\/v3\/images\/bin\/44a29d4d286896f7d559b72eb22d0aff","language":"en","category":["world","international"],"published":"2021-10-12
+        12:01:53 +0000"},{"id":"7c74be38-cf05-4237-a6db-6fd997624a39","title":"China\u2019s
+        Pop-Culture Crackdown Widens After It Hits Its Biggest Movie Star","description":"Beijing
+        is targeting the pop-culture industry as part of an effort to weed out what
+        it sees as unhealthy influences for young people. WSJ looks at what happened
+        after one of China\u2019s highest-profile celebrities, Zhao Wei, disappeared
+        from parts of the Chinese internet. Photo: Xu Nizhi\/Zuma Press","url":"https:\/\/www.news.com.au\/world\/chinas-popculture-crackdown-widens-after-it-hits-its-biggest-movie-star\/video\/5d69b2043660c4401fb78df78419c7d8","author":"news","image":"https:\/\/content.api.news\/v3\/images\/bin\/d6d45b00fcbfd25d3e366de41fe4a455","language":"en","category":["world","international"],"published":"2021-10-12
+        12:01:53 +0000"}],"page":1}'
+  recorded_at: Tue, 12 Oct 2021 12:05:25 GMT
+recorded_with: VCR 6.0.0
