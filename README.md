@@ -37,6 +37,13 @@ https://github.com/heartcombo/devise
 * confirmation mail
 https://mailcatcher.me/
 
+* mailcatcher
+gem install mailcatcher
+mailcatcher
+Go to http://127.0.0.1:1080/
+Send mail through smtp://127.0.0.1:1025
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
