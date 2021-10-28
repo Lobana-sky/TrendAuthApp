@@ -4,7 +4,7 @@
 
 * heroku link: https://authdevise90.herokuapp.com/
 * heroku login
-* heroku app:create authdevise90
+* heroku apps:create chart90
 * git push heroku main
 * heroku run rake --trace db:migrate
 * heroku info
