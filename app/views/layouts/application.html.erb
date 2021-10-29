@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -38,16 +37,10 @@
                     <%=  link_to "Current News", current_news_path %>
                   </span>
                 </li>
-              
                 <% if user_signed_in? %>
-
                  <li class="nav-item">
                   <span class="nav-link">
-                   <%
-=begin%>
- Signin count: <%= current_user.sign_in_count %> 
-<%
-=end%>
+                  Signin count: <%= current_user.sign_in_count %> 
                   </span>
                 </li>
                 
@@ -97,9 +90,10 @@
       <div class="container">
         <% if user_signed_in?%>
           <span>logged in as <span class="logged_email_color"><%= current_user.email%></span></span>
-        <% end%>
         <%= yield %>
+        <% end%>
       </div>
   </body>
-</html> 
+</html>  
+
 

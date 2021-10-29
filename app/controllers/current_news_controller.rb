@@ -1,15 +1,6 @@
 class CurrentNewsController < ApplicationController
   def index 
     @categories = Category.find_each
-
-
-    # @categories_json = []
-
-    # categories.each do |category|
-    #   @categories_json << category.to_json
-    # end
-
-
     @current_news = get_current_news()
 
     # to pass in for view stuff for the user to know which date and which category he/she select

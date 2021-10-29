@@ -1,13 +1,4 @@
-<%
-=begin%>
- 
-<%= @categories_json %> 
-<%
-=end%>
-
-
-
- <%= link_to 'Go to chart', display_chart_path, class: "btn btn-info m-4 d-block"%>
+<%= link_to 'Go to chart', display_chart_path, class: "btn btn-info m-4 d-block"%>
 <%= form_with url: current_news_path, class: "form-check m-4 border border-info p-5", method: :get do |form| %>
 <%= form.label :published_date, "Current news in:" %>
 <%= date_select('published', 'date', :published_date => [:month, :day, :year])%>
@@ -39,4 +30,3 @@
     <td class="news_current_column_width"><%= news.published %></td>
   </tr>
 <% end %>  
-

@@ -2,7 +2,7 @@
 
 # Heroku
 
-* heroku link: https://authdevise90.herokuapp.com/
+* heroku link: https://secure-oasis-85683.herokuapp.com/
 * heroku login
 * heroku apps:create chart90
 * git push heroku main
