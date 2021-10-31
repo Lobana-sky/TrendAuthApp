@@ -16,7 +16,11 @@
         <th scope="row"><%= user.id %></th>
         <td><%= user.email %></td>
         <td><%= user.admin ? "Admin" : "User" %></td>
-        <td><%= user.sign_in_count %></td> 
+        <%
+=begin%>
+ <td><%= user.sign_in_count %></td>  
+<%
+=end%>
       </tr>
       <% end %>
     </tbody>

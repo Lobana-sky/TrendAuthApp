@@ -8,7 +8,11 @@
     <li class="list-group-item">User can delete their own account</li>
     <li class="list-group-item">Account gets locked after 10 retries and user can unlock</li>
     <li class="list-group-item">User can confirm their account and is required to within 24 hours</li>
-    <li class="list-group-item">User can see how many logins they have made: <%= current_user.sign_in_count%></li> 
+    <%
+=begin%>
+ <li class="list-group-item">User can see how many logins they have made: <%= current_user.sign_in_count%></li>  
+<%
+=end%>
     <li class="list-group-item">Admin can see index of users and all their attributes</li>
     <li class="list-group-item">decide what you want to build</li>
     <li class="list-group-item">select a publicly accessible data source (typically json api)</li>
