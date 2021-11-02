@@ -13,9 +13,8 @@ Rails.application.routes.draw do
   get 'display_chart', to: 'chart_data#index'
   
   get '/api/current_news/', to: 'api_current_news#index'
-
   get '/api/current_news/search', to: 'api_current_news#show'
-
+  get '/api/current_news/category', to: 'filter_category#index'
   get '/api/category/', to: 'category#index'
 
   mount Sidekiq::Web => '/sidekiq'
