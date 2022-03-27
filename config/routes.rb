@@ -10,5 +10,10 @@ Rails.application.routes.draw do
 
   get 'display_chart', to: 'chart_data#index'
 
+
+
+
+
+  
   mount Sidekiq::Web => '/sidekiq'
 end
